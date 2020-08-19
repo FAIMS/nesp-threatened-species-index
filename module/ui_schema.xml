@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='utf-8'?>
+<h:html xmlns:h="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:jr="http://openrosa.org/javarosa" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>FILL THIS IN</h:title>
+    <model>
+      <instance>
+        <faims id="FILL_THIS_IN">
+          <!--START: Style-->
+          <style>
+            <orientation>
+              <orientation/>
+            </orientation>
+            <even>
+              <layout_weight/>
+            </even>
+            <large>
+              <layout_weight/>
+            </large>
+          </style>
+          <!--END: Style-->
+          <User>
+            <User>
+              <Select_User/>
+            </User>
+          </User>
+          <Control>
+            <Main>
+              <New_Record/>
+            </Main>
+            <Search>
+              <Colgroup_0>
+                <Col_0>
+                  <Search_Term/>
+                </Col_0>
+                <Col_1>
+                  <Search_Button/>
+                </Col_1>
+              </Colgroup_0>
+              <Entity_Types/>
+              <Entity_List/>
+            </Search>
+            <ID_Numbers>
+              <Next_Source_ID/>
+            </ID_Numbers>
+          </Control>
+          <Record>
+            <Survey>
+              <Source_ID/>
+              <Source_Type/>
+              <Source_Description/>
+              <Source_Provider/>
+              <Location_Name/>
+              <Search_Type_Description/>
+              <Source_Primary_Key/>
+              <Start_Date/>
+              <Finish_Date/>
+              <Start_Time/>
+              <Finish_Time/>
+              <Duration_in_Minutes/>
+              <Duration_in_Days_Nights/>
+              <Number_of_Traps_per_Day_Night/>
+              <Area_m2/>
+              <Length_km/>
+              <Site_Name/>
+              <Coordinates/>
+              <Projection_Reference/>
+              <Positional_Accuracy_External_m/>
+              <Survey_Comments/>
+              <Intensive_Management/>
+              <Monitoring_Program/>
+            </Survey>
+            <Sighting>
+              <New_Sighting/>
+              <Sightings/>
+            </Sighting>
+          </Record>
+          <Sighting>
+            <Sighting>
+              <Taxon_ID/>
+              <Common_Name/>
+              <Scientific_Name/>
+              <Count/>
+              <Unit_of_Measurement/>
+              <New_Unit_of_Measurement/>
+              <Sighting_Comments/>
+            </Sighting>
+          </Sighting>
+        </faims>
+      </instance>
+      <bind nodeset="/faims/Control/ID_Numbers/Next_Source_ID" type="decimal"/>
+    </model>
+  </h:head>
+  <h:body>
+    <!--START: Style-->
+    <group ref="style">
+      <label/>
+      <group ref="orientation">
+        <label/>
+        <input ref="orientation">
+          <label>horizontal</label>
+        </input>
+      </group>
+      <group ref="even">
+        <label/>
+        <input ref="layout_weight">
+          <label>1</label>
+        </input>
+      </group>
+      <group ref="large">
+        <label/>
+        <input ref="layout_weight">
+          <label>3</label>
+        </input>
+      </group>
+    </group>
+    <!--END: Style-->
+    <group ref="User">
+      <label>{User}</label>
+      <group ref="User" faims_scrollable="false">
+        <label>{User}</label>
+        <select1 appearance="compact" ref="Select_User">
+          <label>{Select_User}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
+      </group>
+    </group>
+    <group ref="Control">
+      <label>{Control}</label>
+      <group ref="Main">
+        <label>{Main}</label>
+        <trigger ref="New_Record">
+          <label>{New_Record}</label>
+        </trigger>
+      </group>
+      <group ref="Search" faims_scrollable="false">
+        <label>{Search}</label>
+        <group ref="Colgroup_0" faims_style="orientation">
+          <label/>
+          <group ref="Col_0" faims_style="even">
+            <label/>
+            <input ref="Search_Term">
+              <label>{Search_Term}</label>
+            </input>
+          </group>
+          <group ref="Col_1" faims_style="large">
+            <label/>
+            <trigger ref="Search_Button">
+              <label>{Search}</label>
+            </trigger>
+          </group>
+        </group>
+        <select1 ref="Entity_Types">
+          <label>{Entity_Types}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
+        <select1 appearance="compact" ref="Entity_List">
+          <label>{Entity_List}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
+      </group>
+      <group ref="ID_Numbers">
+        <label>{ID_Numbers}</label>
+        <input ref="Next_Source_ID" faims_style_class="required">
+          <label>{Next_Source_ID}</label>
+        </input>
+      </group>
+    </group>
+    <group ref="Record" faims_archent_type="Record">
+      <label>{Record}</label>
+      <group ref="Survey">
+        <label>{Survey}</label>
+        <input faims_attribute_name="Source ID" faims_attribute_type="measure" ref="Source_ID" faims_style_class="required">
+          <label>{Source_ID}</label>
+        </input>
+        <select1 faims_attribute_name="Source Type" faims_attribute_type="vocab" ref="Source_Type">
+          <label>{Source_Type}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
+        <input faims_attribute_name="Source Description" faims_attribute_type="measure" ref="Source_Description">
+          <label>{Source_Description}</label>
+        </input>
+        <input faims_attribute_name="Source Provider" faims_attribute_type="measure" ref="Source_Provider">
+          <label>{Source_Provider}</label>
+        </input>
+        <input faims_attribute_name="Location Name" faims_attribute_type="measure" ref="Location_Name">
+          <label>{Location_Name}</label>
+        </input>
+        <select1 faims_attribute_name="Search Type Description" faims_attribute_type="vocab" ref="Search_Type_Description" faims_style_class="required">
+          <label>{Search_Type_Description}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
+        <input faims_attribute_name="Source Primary Key" faims_attribute_type="measure" ref="Source_Primary_Key" faims_style_class="required">
+          <label>{Source_Primary_Key}</label>
+        </input>
+        <input faims_attribute_name="Start Date" faims_attribute_type="measure" ref="Start_Date" faims_style_class="required">
+          <label>{Start_Date}</label>
+        </input>
+        <input faims_attribute_name="Finish Date" faims_attribute_type="measure" ref="Finish_Date">
+          <label>{Finish_Date}</label>
+        </input>
+        <input faims_attribute_name="Start Time" faims_attribute_type="measure" ref="Start_Time">
+          <label>{Start_Time}</label>
+        </input>
+        <input faims_attribute_name="Finish Time" faims_attribute_type="measure" ref="Finish_Time">
+          <label>{Finish_Time}</label>
+        </input>
+        <input faims_attribute_name="Duration in Minutes" faims_attribute_type="measure" ref="Duration_in_Minutes">
+          <label>{Duration_in_Minutes}</label>
+        </input>
+        <input faims_attribute_name="Duration in Days Nights" faims_attribute_type="measure" ref="Duration_in_Days_Nights">
+          <label>{Duration_in_Days_Nights}</label>
+        </input>
+        <input faims_attribute_name="Number of Traps per Day Night" faims_attribute_type="measure" ref="Number_of_Traps_per_Day_Night">
+          <label>{Number_of_Traps_per_Day_Night}</label>
+        </input>
+        <input faims_attribute_name="Area m2" faims_attribute_type="measure" ref="Area_m2">
+          <label>{Area__m__}</label>
+        </input>
+        <input faims_attribute_name="Length km" faims_attribute_type="measure" ref="Length_km">
+          <label>{Length__km_}</label>
+        </input>
+        <input faims_attribute_name="Site Name" faims_attribute_type="measure" ref="Site_Name" faims_style_class="required">
+          <label>{Site_Name}</label>
+        </input>
+        <input faims_attribute_name="Coordinates" faims_attribute_type="measure" ref="Coordinates" faims_style_class="required">
+          <label>{Coordinates}</label>
+        </input>
+        <input faims_attribute_name="Projection Reference" faims_attribute_type="measure" ref="Projection_Reference" faims_style_class="required">
+          <label>{Projection_Reference}</label>
+        </input>
+        <input faims_attribute_name="Positional Accuracy External m" faims_attribute_type="measure" ref="Positional_Accuracy_External_m">
+          <label>{Positional_Accuracy_External__m_}</label>
+        </input>
+        <input faims_attribute_name="Survey Comments" faims_attribute_type="measure" ref="Survey_Comments">
+          <label>{Survey_Comments}</label>
+        </input>
+        <input faims_attribute_name="Intensive Management" faims_attribute_type="measure" ref="Intensive_Management">
+          <label>{Intensive_Management}</label>
+        </input>
+        <select1 faims_attribute_name="Monitoring Program" faims_attribute_type="vocab" ref="Monitoring_Program">
+          <label>{Monitoring_Program}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
+      </group>
+      <group ref="Sighting" faims_scrollable="false">
+        <label>{Sighting}</label>
+        <select1 appearance="compact" ref="New_Sighting">
+          <label>{New_Sighting}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
+        <trigger ref="Sightings">
+          <label>{Sightings}</label>
+        </trigger>
+      </group>
+    </group>
+    <group ref="Sighting" faims_archent_type="Sighting">
+      <label>{Sighting}</label>
+      <group ref="Sighting">
+        <label>{Sighting}</label>
+        <input faims_attribute_name="Taxon ID" faims_attribute_type="measure" ref="Taxon_ID" faims_style_class="required">
+          <label>{Taxon_ID}</label>
+        </input>
+        <input faims_attribute_name="Common Name" faims_attribute_type="measure" ref="Common_Name">
+          <label>{Common_Name}</label>
+        </input>
+        <input faims_attribute_name="Scientific Name" faims_attribute_type="measure" ref="Scientific_Name" faims_style_class="required">
+          <label>{Scientific_Name}</label>
+        </input>
+        <input faims_attribute_name="Count" faims_attribute_type="measure" ref="Count" faims_style_class="required">
+          <label>{Count}</label>
+        </input>
+        <select1 faims_attribute_name="Unit of Measurement" faims_attribute_type="vocab" ref="Unit_of_Measurement" faims_style_class="required">
+          <label>{Unit_of_Measurement}</label>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
+        <input faims_attribute_name="New Unit of Measurement" faims_attribute_type="measure" ref="New_Unit_of_Measurement">
+          <label>{New_Unit_of_Measurement}</label>
+        </input>
+        <input faims_attribute_name="Sighting Comments" faims_attribute_type="measure" ref="Sighting_Comments">
+          <label>{Sighting_Comments}</label>
+        </input>
+      </group>
+    </group>
+  </h:body>
+</h:html>

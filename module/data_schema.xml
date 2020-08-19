@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dataSchema>
+  <RelationshipElement name="Record - Sighting" type="hierarchical">
+    <description>A 1-to-n relationship between the parent and its children, respectively.</description>
+    <parent>Parent Of</parent>
+    <child>Child Of</child>
+  </RelationshipElement>
+  <ArchaeologicalElement name="Record">
+    <description></description>
+    <property name="Source ID" type="measure" isIdentifier="true">
+      <description></description>
+      <formatString>$2</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Source Primary Key" type="measure" isIdentifier="true">
+      <description>
+        This text field is a concatenation between SourceDesc and the primary key in the original data (if existing) or a consecutive number starting at 1. Each row needs to have a unique text field.
+      </description>
+      <formatString> $2</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Source Type" type="vocab">
+      <description>
+        Specify whether data is obtained as electronic primary data from a custodian or extracted from a published paper/report.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+      <lookup>
+        <term>{Paper_report}
+<description> </description></term>
+        <term>{Custodian}
+<description> </description></term>
+      </lookup>
+    </property>
+    <property name="Source Description" type="measure">
+      <description>
+        This text field describes the data source e.g. BlackThroatedFinchRecoveryTeamMonitoring.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Source Provider" type="measure">
+      <description>
+        Name of institution or individual e.g. Parks Australia or Doe J.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Location Name" type="measure">
+      <description>
+        Populate the general name of location e.g. Kakadu National Park. This field is not related to SiteName.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Search Type Description" type="vocab">
+      <description>
+        This text field describes the search type (= monitoring method used).
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+      <lookup>
+        <term>{Live_trapping}
+<description> </description></term>
+        <term>{Method_1}
+<description> </description></term>
+        <term>{Method_2}
+<description> </description></term>
+      </lookup>
+    </property>
+    <property name="Start Date" type="measure">
+      <description>
+        Populate the date when monitoring was started and ended (in case of multiple days). Format date as DD/MM/YYYY. Use the format 00/00/2001 if only the monitoring year is available and 00/10/2001 if only the month and year are available. StartDate is REQUIRED.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Finish Date" type="measure">
+      <description>
+        Populate the date when monitoring was started and ended (in case of multiple days). Format date as DD/MM/YYYY. Use the format 00/00/2001 if only the monitoring year is available and 00/10/2001 if only the month and year are available. FinishDate is OPTIONAL.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Start Time" type="measure">
+      <description>
+        Populate the StartTime and FinishTime of monitoring as HH:MM in 24 hours format e.g. 16:00. OPTIONAL.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Finish Time" type="measure">
+      <description>
+        Populate the StartTime and FinishTime of monitoring as HH:MM in 24 hours format e.g. 16:00. OPTIONAL.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Duration in Minutes" type="measure">
+      <description>
+        Populate this field on monitoring duration by entering the number of days or nights spent e.g. trap days/nights. OPTIONAL.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Duration in Days Nights" type="measure">
+      <description>
+        Populate the duration of monitoring in minutes. OPTIONAL.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Number of Traps per Day Night" type="measure">
+      <description>
+        If you use traps, populate this field with information on the number of traps or number of cameras set at a site per day or night. OPTIONAL.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Area m2" type="measure">
+      <description>
+        Populate this field on area surveyed in square meters (m²). Note that 1 hectare are 10000 m². OPTIONAL.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Length km" type="measure">
+      <description>
+        Populate this field on length of transect surveyed in km. OPTIONAL.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Site Name" type="measure">
+      <description>
+        This text field describes the name of a (fixed) site. Sites are the spatial basis for the time series, i.e. each site will form a different time series.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Coordinates" type="measure">
+      <description>
+        Populate the latitude/longitude or easting/northing coordinates of the original data format. Ensure that the information in the ProjectionReference is entered.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Projection Reference" type="measure">
+      <description>
+        Specify the ProjectionReference of the XY coordinates entered - see ‘Projection reference codes’ tab for a full list of options or contact tsx@uq.edu.au if your ProjectionReference is not available.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Positional Accuracy External m" type="measure">
+      <description>
+        Enter the positional accuracy of spatial coordinates provided in m.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Survey Comments" type="measure">
+      <description>
+        Include any information about disturbance or other factors that may influence the detection for plants.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Intensive Management" type="measure">
+      <description>
+        Indicate whether the monitored population is intensively managed. This can include information on a population inside a predator-free fence. This information is mainly needed for mammals.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Monitoring Program" type="vocab">
+      <description>
+        Include the abbreviation of the monitoring program for this record. Add 'RLP' for data collected within the Regional Land Partnerships Program. REQUIRED. OPTIONAL for other monitoring programs.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+      <lookup>
+        <term>{RLP}
+<description> </description></term>
+        <term>{Other}
+<description> </description></term>
+      </lookup>
+    </property>
+  </ArchaeologicalElement>
+  <ArchaeologicalElement name="Sighting">
+    <description></description>
+    <property name="Taxon ID" type="measure" isIdentifier="true">
+      <description>
+        For birds and mammals: select one of Taxon ID, Common Name or Scientific Name from the appropriate ‘Taxonomic list’ tab. REQUIRED.
+
+      For plants: select either Taxon ID or Scientific Name from the appropriate ‘Taxonomic list (plants)’ tab. REQUIRED.
+
+        Taxon ID, Common Name or Scientific Name have to be exactly as specified on the appropriate ‘Taxonomic list’ tabs e.g. ‘Perameles gunnii Victorian subspecies’. Including any surplus characters or spaces will lead to errors.
+      </description>
+      <formatString>$2</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Common Name" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Scientific Name" type="measure">
+      <description></description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Count" type="measure">
+      <description>
+        Specify 0 for absences/non-detections.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Unit of Measurement" type="vocab">
+      <description>
+        Select the unit of measurement from ‘Existing UnitIDs’ tab. If your unit of measurement is not available, add and new unit description and contact tsx@uq.edu.au.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+      <lookup>
+        <term>{Sample}
+<description> </description><term>{Abundance__counts_}
+<description> </description></term><term>{Count_of_seen_individuals_after_playback}
+<description> </description></term><term>{Density__counts_fixed_areas_}
+<description> </description></term><term>{Occupancy____presences___surveys___trapping_success__number_of_encounters__captures__per_100_trap_nights_of_effort_}
+<description> </description></term><term>{Occupancy____presences___surveys_}
+<description> </description></term></term>
+        <term>{Index}
+<description> </description></term>
+        <term>{Proxy}
+<description> </description><term>{Breeding_pairs}
+<description> </description></term><term>{Burrow_estimate_based_on_transect_density}
+<description> </description></term><term>{Count_of_pre_fledging_chicks}
+<description> </description></term><term>{Nests_with_eggs}
+<description> </description></term><term>{Nests}
+<description> </description></term><term>{Recorded_calls}
+<description> </description></term></term>
+        <term>{Proportion_of_surveyed_sites_that_had_animal_tracks_signs}
+<description> </description></term>
+        <term>{Sightings_per_100_km_driven_transect}
+<description> </description></term>
+        <term>{Mean_number_of_fresh_adult_scats_per_plot}
+<description> </description></term>
+        <term>{Other}
+<description> </description></term>
+        <term>{N_A}
+<description> </description></term>
+      </lookup>
+    </property>
+    <property name="New Unit of Measurement" type="measure">
+      <description>
+        If your unit of measurement is not available, add and new unit description and contact tsx@uq.edu.au.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Sighting Comments" type="measure">
+      <description>
+        Add any additional information with relevance to the monitored species.
+      </description>
+      <formatString>{{if $1 then $1}}{{if and($1, $2) then " " }}{{if $2 then $2}}{{if $3 then " ($3)"}}{{if between($4,0,0.49) then "??" elsif lessThan($4,1) then "?" }}</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+  </ArchaeologicalElement>
+</dataSchema>

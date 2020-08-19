@@ -1,0 +1,234 @@
+<?xml version="1.0" ?>
+<module>
+
+<User f="nodata">
+  <User f="noscroll">
+    <Select_User t="list" f="user" l="Control"/>
+  </User>
+</User>
+
+<Control f="nodata">
+  <Main>
+    <New_Record l="Record"/>
+  </Main>
+  <search/>
+  <ID_Numbers>
+    <autonum/>
+  </ID_Numbers>
+</Control>
+
+<Record>
+  <fmt>{{Source_ID}} {{Source_Primary_Key}}</fmt>
+
+  <Survey>
+    <Source_ID f="notnull autonum"/>
+    <Source_Type>
+      <desc>
+        Specify whether data is obtained as electronic primary data from a custodian or extracted from a published paper/report.
+      </desc>
+      <opts>
+        <opt>Paper/report</opt>
+        <opt>Custodian</opt>
+      </opts>
+    </Source_Type>
+    <Source_Description>
+      <desc>
+        This text field describes the data source e.g. BlackThroatedFinchRecoveryTeamMonitoring.
+      </desc>
+    </Source_Description>
+    <Source_Provider>
+      <desc>
+        Name of institution or individual e.g. Parks Australia or Doe J.
+      </desc>
+    </Source_Provider>
+    <Location_Name>
+      <desc>
+        Populate the general name of location e.g. Kakadu National Park. This field is not related to SiteName.
+      </desc>
+    </Location_Name>
+    <Search_Type_Description t="dropdown" f="notnull">
+      <desc>
+        This text field describes the search type (= monitoring method used).
+      </desc>
+      <opts>
+        <opt>Live-trapping</opt>
+        <opt>Method 1</opt>
+        <opt>Method 2</opt>
+      </opts>
+    </Search_Type_Description>
+    <Source_Primary_Key f="notnull">
+      <desc>
+        This text field is a concatenation between SourceDesc and the primary key in the original data (if existing) or a consecutive number starting at 1. Each row needs to have a unique text field.
+      </desc>
+    </Source_Primary_Key>
+    <Start_Date f="notnull">
+      <desc>
+        Populate the date when monitoring was started and ended (in case of multiple days). Format date as DD/MM/YYYY. Use the format 00/00/2001 if only the monitoring year is available and 00/10/2001 if only the month and year are available. StartDate is REQUIRED.
+      </desc>
+    </Start_Date>
+    <Finish_Date>
+      <desc>
+        Populate the date when monitoring was started and ended (in case of multiple days). Format date as DD/MM/YYYY. Use the format 00/00/2001 if only the monitoring year is available and 00/10/2001 if only the month and year are available. FinishDate is OPTIONAL.
+      </desc>
+    </Finish_Date>
+    <Start_Time>
+      <desc>
+        Populate the StartTime and FinishTime of monitoring as HH:MM in 24 hours format e.g. 16:00. OPTIONAL.
+      </desc>
+    </Start_Time>
+    <Finish_Time>
+      <desc>
+        Populate the StartTime and FinishTime of monitoring as HH:MM in 24 hours format e.g. 16:00. OPTIONAL.
+      </desc>
+    </Finish_Time>
+    <Duration_in_Minutes>
+      <desc>
+        Populate this field on monitoring duration by entering the number of days or nights spent e.g. trap days/nights. OPTIONAL.
+      </desc>
+    </Duration_in_Minutes>
+    <Duration_in_Days_Nights>
+      Duration in Days/Nights
+      <desc>
+        Populate the duration of monitoring in minutes. OPTIONAL.
+      </desc>
+    </Duration_in_Days_Nights>
+    <Number_of_Traps_per_Day_Night>
+      Number of Traps per Day/Night
+      <desc>
+        If you use traps, populate this field with information on the number of traps or number of cameras set at a site per day or night. OPTIONAL.
+      </desc>
+    </Number_of_Traps_per_Day_Night>
+    <Area_m2>
+      Area (m²)
+      <desc>
+        Populate this field on area surveyed in square meters (m²). Note that 1 hectare are 10000 m². OPTIONAL.
+      </desc>
+    </Area_m2>
+    <Length_km>
+      Length (km)
+      <desc>
+        Populate this field on length of transect surveyed in km. OPTIONAL.
+      </desc>
+    </Length_km>
+    <Site_Name f="notnull">
+      <desc>
+        This text field describes the name of a (fixed) site. Sites are the spatial basis for the time series, i.e. each site will form a different time series.
+      </desc>
+    </Site_Name>
+    <Coordinates f="notnull">
+      <desc>
+        Populate the latitude/longitude or easting/northing coordinates of the original data format. Ensure that the information in the ProjectionReference is entered.
+      </desc>
+    </Coordinates>
+    <Projection_Reference f="notnull">
+      <desc>
+        Specify the ProjectionReference of the XY coordinates entered - see ‘Projection reference codes’ tab for a full list of options or contact tsx@uq.edu.au if your ProjectionReference is not available.
+      </desc>
+    </Projection_Reference>
+    <Positional_Accuracy_External_m>
+      Positional Accuracy External (m)
+      <desc>
+        Enter the positional accuracy of spatial coordinates provided in m.
+      </desc>
+    </Positional_Accuracy_External_m>
+    <Survey_Comments>
+      <desc>
+        Include any information about disturbance or other factors that may influence the detection for plants.
+      </desc>
+    </Survey_Comments>
+    <Intensive_Management>
+      <desc>
+        Indicate whether the monitored population is intensively managed. This can include information on a population inside a predator-free fence. This information is mainly needed for mammals.
+      </desc>
+    </Intensive_Management>
+    <Monitoring_Program t="dropdown">
+      <desc>
+        Include the abbreviation of the monitoring program for this record. Add 'RLP' for data collected within the Regional Land Partnerships Program. REQUIRED. OPTIONAL for other monitoring programs.
+      </desc>
+      <opts>
+        <opt>RLP</opt>
+        <opt>Other</opt>
+      </opts>
+    </Monitoring_Program>
+  </Survey>
+
+  <Sighting f="noscroll">
+    <New_Sighting ec="Sighting"/>
+    <Sightings lc="Sighting"/>
+  </Sighting>
+</Record>
+
+<Sighting>
+  <fmt>{{Taxon_ID}}</fmt>
+
+  <Sighting>
+    <Taxon_ID f="notnull">
+      <desc>
+        For birds and mammals: select one of Taxon ID, Common Name or Scientific Name from the appropriate ‘Taxonomic list’ tab. REQUIRED.
+
+      For plants: select either Taxon ID or Scientific Name from the appropriate ‘Taxonomic list (plants)’ tab. REQUIRED.
+
+        Taxon ID, Common Name or Scientific Name have to be exactly as specified on the appropriate ‘Taxonomic list’ tabs e.g. ‘Perameles gunnii Victorian subspecies’. Including any surplus characters or spaces will lead to errors.
+      </desc>
+    </Taxon_ID>
+    <Common_Name/>
+    <Scientific_Name f="notnull"/>
+    <Count f="notnull">
+      <desc>
+        Specify 0 for absences/non-detections.
+      </desc>
+    </Count>
+    <Unit_of_Measurement f="notnull">
+      <desc>
+        Select the unit of measurement from ‘Existing UnitIDs’ tab. If your unit of measurement is not available, add and new unit description and contact tsx@uq.edu.au.
+      </desc>
+      <opts>
+        <opt>
+          Sample
+          <opt>Abundance (counts)</opt>
+          <opt>Count of seen individuals after playback</opt>
+          <opt>Density (counts/fixed areas)</opt>
+          <opt>Occupancy (# presences/# surveys = trapping success: number of encounters (captures) per 100 trap nights of effort)</opt>
+          <opt>Occupancy (# presences/# surveys)</opt>
+        </opt>
+        <opt>Index</opt>
+
+        <opt>
+          Proxy
+          <opt>Breeding pairs</opt>
+          <opt>Burrow estimate based on transect density</opt>
+          <opt>Count of pre-fledging chicks</opt>
+          <opt>Nests with eggs</opt>
+          <opt>Nests</opt>
+          <opt>Recorded calls</opt>
+        </opt>
+
+
+        <opt>Proportion of surveyed sites that had animal tracks/signs</opt>
+        <opt>Sightings per 100 km driven transect</opt>
+        <opt>Mean number of fresh adult scats per plot</opt>
+        <opt>Other</opt>
+        <opt>N/A</opt>
+
+      </opts>
+    </Unit_of_Measurement>
+    <New_Unit_of_Measurement>
+      <desc>
+        If your unit of measurement is not available, add and new unit description and contact tsx@uq.edu.au.
+      </desc>
+    </New_Unit_of_Measurement>
+    <Sighting_Comments>
+      <desc>
+        Add any additional information with relevance to the monitored species.
+      </desc>
+    </Sighting_Comments>
+  </Sighting>
+
+</Sighting>
+
+
+
+<logic><![CDATA[
+]]></logic>
+
+</module>
