@@ -1,0 +1,108 @@
+/**************************** MENU CORRESPONDENCE *****************************/
+
+final String REF_TAXON_ID =
+  "Sighting/Sighting/Taxon_ID";
+final String REF_COMMON_NAME =
+  "Sighting/Sighting/Common_Name";
+final String REF_SCIENTIFIC_NAME =
+  "Sighting/Sighting/Scientific_Name";
+
+String[] toArch16nKeys(String[] array) {
+  String[] out = new String[array.length];
+  System.arraycopy(array, 0, out, 0, array.length);
+
+  for (int i = 0; i < out.length; i++) {
+    out[i] = "{" + out[i].replaceAll("([^0-9a-zA-Z])", "_") + "}";
+  }
+  return out;
+}
+
+Map getIdMap(String[] array) {
+  Map map = new HashMap();
+  for (int i = 0; i < array.length; i ++) {
+    if (map.containsKey(array[i]))
+      map.put(array[i], -1);
+    else
+      map.put(array[i], i);
+  }
+  return map;
+}
+
+final String[] TAXON_ID_16        = toArch16nKeys(TAXON_ID);
+final String[] COMMON_NAME_16     = toArch16nKeys(COMMON_NAME);
+final String[] SCIENTIFIC_NAME_16 = toArch16nKeys(SCIENTIFIC_NAME);
+
+final Map TAXON_ID_TO_INDEX        = getIdMap(TAXON_ID_16);
+final Map COMMON_NAME_TO_INDEX     = getIdMap(COMMON_NAME_16);
+final Map SCIENTIFIC_NAME_TO_INDEX = getIdMap(SCIENTIFIC_NAME_16);
+
+int getOrDefault(Map map, String key) {
+  int default_ = -1;
+  Integer value = map.get(key);
+  if (value == null)
+    return default_;
+  else
+    return value;
+}
+
+int getTaxonIdIndex() {
+  return getOrDefault(TAXON_ID_TO_INDEX, getMenuValue(REF_TAXON_ID));
+}
+
+int getCommonNameIndex() {
+  return getOrDefault(COMMON_NAME_TO_INDEX, getMenuValue(REF_COMMON_NAME));
+}
+
+int getScientificNameIndex() {
+  return getOrDefault(SCIENTIFIC_NAME_TO_INDEX, getMenuValue(REF_SCIENTIFIC_NAME));
+}
+
+void setByIndex(int index) {
+  if (index == -1) {
+    return;
+  }
+
+  if (
+      !TAXON_ID_16[index].equals(getMenuValue(REF_TAXON_ID)) &&
+      !setMenuValue(REF_TAXON_ID, TAXON_ID_16[index])
+  ) {
+    setFieldValue(REF_TAXON_ID, null);
+  }
+
+  if (
+      !COMMON_NAME_16[index].equals(getMenuValue(REF_COMMON_NAME)) &&
+      !setMenuValue(REF_COMMON_NAME, COMMON_NAME_16[index])
+  ) {
+    setFieldValue(REF_COMMON_NAME, null);
+  }
+
+  if (
+      !SCIENTIFIC_NAME_16[index].equals(getMenuValue(REF_SCIENTIFIC_NAME)) &&
+      !setMenuValue(REF_SCIENTIFIC_NAME, SCIENTIFIC_NAME_16[index])
+  ) {
+    setFieldValue(REF_SCIENTIFIC_NAME, null);
+  }
+}
+
+void setByTaxonId() {
+  setByIndex(getTaxonIdIndex());
+}
+void setByCommonName() {
+  setByIndex(getCommonNameIndex());
+}
+void setByScientificName() {
+  setByIndex(getScientificNameIndex());
+}
+
+addOnEvent(
+    REF_TAXON_ID,
+    "click",
+    "setByTaxonId()");
+addOnEvent(
+    REF_COMMON_NAME,
+    "click",
+    "setByCommonName()");
+addOnEvent(
+    REF_SCIENTIFIC_NAME,
+    "click",
+    "setByScientificName()");

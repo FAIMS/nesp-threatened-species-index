@@ -1,0 +1,797 @@
+<opts>
+  <opt>
+    Birds
+    <opt>Southern Cassowary</opt>
+    <opt>Australian Southern Cassowary</opt>
+    <opt>Blue-billed Duck</opt>
+    <opt>Recherche Cape Barren Goose</opt>
+    <opt>Malleefowl</opt>
+    <opt>Stokes Range White-quilled Rock-Pigeon</opt>
+    <opt>Southern Squatter Pigeon</opt>
+    <opt>Partridge Pigeon</opt>
+    <opt>Western Partridge Pigeon</opt>
+    <opt>Eastern Partridge Pigeon</opt>
+    <opt>Grey-capped Emerald-Dove</opt>
+    <opt>Christmas Island Grey-capped Emerald-Dove</opt>
+    <opt>Christmas Island Imperial-Pigeon</opt>
+    <opt>Glossy Swiftlet</opt>
+    <opt>Christmas Island Glossy Swiftlet</opt>
+    <opt>Lord Howe Woodhen</opt>
+    <opt>Cocos Keeling Buff-banded Rail</opt>
+    <opt>Black-faced Sheathbill</opt>
+    <opt>Heard Island Black-faced Sheathbill</opt>
+    <opt>Grey Plover</opt>
+    <opt>Eastern Grey Plover</opt>
+    <opt>Lesser Sand Plover</opt>
+    <opt>Mongolian Lesser Sand Plover</opt>
+    <opt>Kamchatkan Lesser Sand Plover</opt>
+    <opt>Greater Sand Plover</opt>
+    <opt>Mongolian Greater Sand Plover</opt>
+    <opt>Hooded Plover</opt>
+    <opt>Eastern Hooded Plover</opt>
+    <opt>Plains-wanderer</opt>
+    <opt>Australian Painted-snipe</opt>
+    <opt>Eastern Siberian Whimbrel</opt>
+    <opt>Far Eastern Curlew</opt>
+    <opt>Western Alaskan Bar-tailed Godwit</opt>
+    <opt>Northern Siberian Bar-tailed Godwit</opt>
+    <opt>Black-tailed Godwit</opt>
+    <opt>Eastern Siberian Black-tailed Godwit</opt>
+    <opt>Ruddy Turnstone</opt>
+    <opt>Palaearctic Ruddy Turnstone</opt>
+    <opt>Great Knot</opt>
+    <opt>Red Knot</opt>
+    <opt>New Siberian Islands Red Knot</opt>
+    <opt>North-eastern Siberian Red Knot</opt>
+    <opt>Curlew Sandpiper</opt>
+    <opt>Red-necked Stint</opt>
+    <opt>Asian Dowitcher</opt>
+    <opt>Terek Sandpiper</opt>
+    <opt>Black-breasted Button-quail</opt>
+    <opt>Houtman Abrolhos Painted Button-quail</opt>
+    <opt>Buff-breasted Button-quail</opt>
+    <opt>Lesser Noddy</opt>
+    <opt>Houtman Abrolhos Lesser Noddy</opt>
+    <opt>Fairy Tern</opt>
+    <opt>New Caledonian Fairy Tern</opt>
+    <opt>Australian Fairy Tern</opt>
+    <opt>New Zealand Antarctic Tern</opt>
+    <opt>Indian Ocean Antarctic Tern</opt>
+    <opt>Red-tailed Tropicbird</opt>
+    <opt>Indian Ocean Red-tailed Tropicbird</opt>
+    <opt>White-tailed Tropicbird</opt>
+    <opt>Christmas Island White-tailed Tropicbird</opt>
+    <opt>Indian Ocean White-tailed Tropicbird</opt>
+    <opt>Gentoo Penguin</opt>
+    <opt>Subantarctic Gentoo Penguin</opt>
+    <opt>Macaroni Penguin</opt>
+    <opt>Royal Penguin</opt>
+    <opt>Southern Rockhopper Penguin</opt>
+    <opt>Eastern Rockhopper Penguin</opt>
+    <opt>Subantarctic Wilson's Storm-Petrel</opt>
+    <opt>Grey-backed Storm-Petrel</opt>
+    <opt>White-bellied Storm-Petrel</opt>
+    <opt>Tasman White-bellied Storm-Petrel</opt>
+    <opt>Wandering Albatross</opt>
+    <opt>Antipodean Albatross</opt>
+    <opt>Gibson's Albatross</opt>
+    <opt>Amsterdam Albatross</opt>
+    <opt>Tristan Albatross</opt>
+    <opt>Northern Royal Albatross</opt>
+    <opt>Southern Royal Albatross</opt>
+    <opt>Light-mantled Sooty Albatross</opt>
+    <opt>Sooty Albatross</opt>
+    <opt>Indian Yellow-nosed Albatross</opt>
+    <opt>Grey-headed Albatross</opt>
+    <opt>Black-browed Albatross</opt>
+    <opt>Campbell Albatross</opt>
+    <opt>Buller's Albatross</opt>
+    <opt>Southern Buller's Albatross</opt>
+    <opt>Northern Buller's Albatross</opt>
+    <opt>Shy Albatross</opt>
+    <opt>White-capped Albatross</opt>
+    <opt>Chatham Albatross</opt>
+    <opt>Salvin's Albatross</opt>
+    <opt>Matsudaira's Storm-Petrel</opt>
+    <opt>Northern Giant-Petrel</opt>
+    <opt>Southern Giant-Petrel</opt>
+    <opt>Blue Petrel</opt>
+    <opt>Southern Fairy Prion</opt>
+    <opt>Southern Fulmar Prion</opt>
+    <opt>Gould's Petrel</opt>
+    <opt>New Caledonian Gould's Petrel</opt>
+    <opt>Australian Gould's Petrel</opt>
+    <opt>Providence Petrel</opt>
+    <opt>Western Kermadec Petrel</opt>
+    <opt>Herald Petrel</opt>
+    <opt>Mottled Petrel</opt>
+    <opt>White-necked Petrel</opt>
+    <opt>Southern White-necked Petrel</opt>
+    <opt>Soft-plumaged Petrel</opt>
+    <opt>Grey Petrel</opt>
+    <opt>White-chinned Petrel</opt>
+    <opt>Westland Petrel</opt>
+    <opt>Black Petrel</opt>
+    <opt>Buller's Shearwater</opt>
+    <opt>Sooty Shearwater</opt>
+    <opt>Flesh-footed Shearwater</opt>
+    <opt>Streaked Shearwater</opt>
+    <opt>Hutton's Shearwater</opt>
+    <opt>Tasman Little Shearwater</opt>
+    <opt>Tahiti Petrel</opt>
+    <opt>Pacific Tahiti Petrel</opt>
+    <opt>New Caledonian Tahiti Petrel</opt>
+    <opt>Australasian Bittern</opt>
+    <opt>Christmas Island Frigatebird</opt>
+    <opt>Abbott's Booby</opt>
+    <opt>Tasman Booby</opt>
+    <opt>Imperial Shag</opt>
+    <opt>Heard Island Imperial Shag</opt>
+    <opt>Macquarie Island Imperial Shag</opt>
+    <opt>Letter-winged Kite</opt>
+    <opt>Tasmanian Wedge-tailed Eagle</opt>
+    <opt>Papuan Brown Goshawk</opt>
+    <opt>Christmas Island Goshawk</opt>
+    <opt>Red Goshawk</opt>
+    <opt>Tasmanian Masked Owl</opt>
+    <opt>Northern Masked Owl</opt>
+    <opt>Tiwi Masked Owl</opt>
+    <opt>Papuan Barking Owl</opt>
+    <opt>Southern Barking Owl</opt>
+    <opt>Tasman Bookook</opt>
+    <opt>Norfolk Island Boobook</opt>
+    <opt>Christmas Island Hawk-Owl</opt>
+    <opt>Tasmanian Azure Kingfisher</opt>
+    <opt>Norfolk Island Sacred Kingfisher</opt>
+    <opt>Grey Falcon</opt>
+    <opt>South-eastern Red-tailed Black-Cockatoo</opt>
+    <opt>Forest Red-tailed Black-Cockatoo</opt>
+    <opt>Kangaroo Island Glossy Black-Cockatoo</opt>
+    <opt>South-eastern Glossy Black-Cockatoo</opt>
+    <opt>Baudin's Black-Cockatoo</opt>
+    <opt>Carnaby's Black-Cockatoo</opt>
+    <opt>Palm Cockatoo</opt>
+    <opt>Australian Palm Cockatoo</opt>
+    <opt>Eastern Major Mitchell's Cockatoo</opt>
+    <opt>Superb Parrot</opt>
+    <opt>Eastern Regent Parrot</opt>
+    <opt>Princess Parrot</opt>
+    <opt>Eclectus Parrot</opt>
+    <opt>Cape York Eclectus Parrot</opt>
+    <opt>Golden-shouldered Parrot</opt>
+    <opt>King Island Green Rosella</opt>
+    <opt>Swift Parrot</opt>
+    <opt>Red-fronted Parakeet</opt>
+    <opt>Norfolk Island Green Parrot</opt>
+    <opt>Western Ground Parrot</opt>
+    <opt>Mainland Ground Parrot</opt>
+    <opt>Night Parrot</opt>
+    <opt>Orange-bellied Parrot</opt>
+    <opt>Coxen's Fig-Parrot</opt>
+    <opt>Albert's Lyrebird</opt>
+    <opt>Rufous Scrub-bird</opt>
+    <opt>Southern Rufous Scrub-bird</opt>
+    <opt>Northern Rufous Scrub-bird</opt>
+    <opt>Noisy Scrub-bird</opt>
+    <opt>Fawn-breasted Bowerbird</opt>
+    <opt>South-eastern Brown Treecreeper</opt>
+    <opt>Western Purple-crowned Fairy-wren</opt>
+    <opt>Eastern Purple-crowned Fairy-wren</opt>
+    <opt>Shark Bay Variegated Fairy-wren</opt>
+    <opt>Barrow Island White-winged Fairy-wren</opt>
+    <opt>Dirk Hartog White-winged Fairy-wren</opt>
+    <opt>Dirk Hartog Southern Emu-wren</opt>
+    <opt>Fleurieu Peninsula Southern Emu-wren</opt>
+    <opt>Eyre Peninsula Southern Emu-wren</opt>
+    <opt>Mallee Emu-wren</opt>
+    <opt>Bulloo Grey Grasswren</opt>
+    <opt>White-throated Grasswren</opt>
+    <opt>Carpentarian Grasswren</opt>
+    <opt>Short-tailed Grasswren</opt>
+    <opt>Flinders Ranges Short-tailed Grasswren</opt>
+    <opt>Gawler Ranges Short-tailed Grasswren</opt>
+    <opt>Black Grasswren</opt>
+    <opt>Eyre Peninsula Western Grasswren</opt>
+    <opt>Thick-billed Grasswren</opt>
+    <opt>Curawinya Thick-billed Grasswren</opt>
+    <opt>Grey Range Thick-billed Grasswren</opt>
+    <opt>Flinders Ranges Thick-billed Grasswren</opt>
+    <opt>Eastern Bristlebird</opt>
+    <opt>Southern Eastern Bristlebird</opt>
+    <opt>Northern Eastern Bristlebird</opt>
+    <opt>Western Bristlebird</opt>
+    <opt>Painted Honeyeater</opt>
+    <opt>South-eastern Black-chinned Honeyeater</opt>
+    <opt>Capricorn Yellow Chat</opt>
+    <opt>Alligator Rivers Yellow Chat</opt>
+    <opt>Regent Honeyeater</opt>
+    <opt>King Island Yellow Wattlebird</opt>
+    <opt>Helmeted Honeyeater</opt>
+    <opt>Black-eared Miner</opt>
+    <opt>Forty-spotted Pardalote</opt>
+    <opt>Norfolk Island Gerygone</opt>
+    <opt>Mount Lofty Ranges Chestnut-rumped Heathwren</opt>
+    <opt>Flinders Ranges Chestnut-rumped Heathwren</opt>
+    <opt>Dorre Rufous Fieldwren</opt>
+    <opt>Dirk Hartog Rufous Fieldwren</opt>
+    <opt>King Island Scrubtit</opt>
+    <opt>Chestnut-breasted Whiteface</opt>
+    <opt>King Island Brown Thornbill</opt>
+    <opt>Samphire Thornbill</opt>
+    <opt>Mt Lofty Ranges Spotted Quail-thrush</opt>
+    <opt>Red-lored Whistler</opt>
+    <opt>Lord Howe Golden Whistler</opt>
+    <opt>Norfolk Island Golden Whistler</opt>
+    <opt>Kangaroo Island Western Whipbird</opt>
+    <opt>Mallee Western Whipbird</opt>
+    <opt>Western Heath Western Whipbird</opt>
+    <opt>King Island Black Currawong</opt>
+    <opt>Lord Howe Pied Currawong</opt>
+    <opt>Norfolk Island Grey Fantail</opt>
+    <opt>Flame Robin</opt>
+    <opt>Norfolk Island Scarlet Robin</opt>
+    <opt>South-eastern Hooded Robin</opt>
+    <opt>Tiwi Hooded Robin</opt>
+    <opt>White-bellied Crimson Finch</opt>
+    <opt>Cape York Star Finch</opt>
+    <opt>Southern Star Finch</opt>
+    <opt>Southern Black-throated Finch</opt>
+    <opt>Gouldian Finch</opt>
+    <opt>Tiwi Horsfield's Bushlark</opt>
+    <opt>Christmas Island White-eye</opt>
+    <opt>Lord Howe Silvereye</opt>
+    <opt>White-chested White-eye</opt>
+    <opt>Slender-billed White-eye</opt>
+    <opt>Singing Starling</opt>
+    <opt>South Australian Bassian Thrush</opt>
+    <opt>Island Thrush</opt>
+    <opt>Christmas Island Thrush</opt>
+  </opt>
+  <opt>
+    Mammals
+    <opt>Feathertail Glider</opt>
+    <opt>Rufous Bettong</opt>
+    <opt>Kultarr</opt>
+    <opt>Rusty Antechinus</opt>
+    <opt>Agile Antechinus</opt>
+    <opt>Silver-headed Antechinus</opt>
+    <opt>Black-tailed Antechinus</opt>
+    <opt>Fawn Antechinus</opt>
+    <opt>Yellow-footed Antechinus</opt>
+    <opt>Mardo</opt>
+    <opt>Atherton Antechinus</opt>
+    <opt>Cinnamon Antechinus</opt>
+    <opt>Mainland Dusky Antechinus</opt>
+    <opt>Swamp Antechinus</opt>
+    <opt>Swamp Antechinus (coastal Victoria and far south-eastern South Australia)</opt>
+    <opt>Buff-footed Antechinus</opt>
+    <opt>Brown Antechinus</opt>
+    <opt>Subtropical Antechinus</opt>
+    <opt>Tasmanian Dusky Antechinus</opt>
+    <opt>Dusky Antechinus (Grampians)</opt>
+    <opt>Tasman Peninsula Dusky Antechinus</opt>
+    <opt>Australian Fur Seal</opt>
+    <opt>Subantarctic Fur Seal</opt>
+    <opt>New Zealand Fur Seal</opt>
+    <opt>Antarctic Fur Seal</opt>
+    <opt>White-striped Freetail Bat</opt>
+    <opt>Dwarf Minke Whale</opt>
+    <opt>Antarctic Minke Whale</opt>
+    <opt>Sei Whale</opt>
+    <opt>Bryde's Whale</opt>
+    <opt>Blue Whale</opt>
+    <opt>Pygmy Blue Whale</opt>
+    <opt>Omura's Whale</opt>
+    <opt>Fin Whale</opt>
+    <opt>Arnoux's Beaked Whale</opt>
+    <opt>Desert Bettong</opt>
+    <opt>Eastern Bettong</opt>
+    <opt>Boodie</opt>
+    <opt>Boodie (Barrow Island)</opt>
+    <opt>Boodie (inland)</opt>
+    <opt>Boodie (Shark Bay)</opt>
+    <opt>Woylie</opt>
+    <opt>Nullarbor Dwarf Bettong</opt>
+    <opt>Northern Bettong</opt>
+    <opt>Mountain Pygmy-possum</opt>
+    <opt>Desert Rat-kangaroo</opt>
+    <opt>Dingo</opt>
+    <opt>Dingo</opt>
+    <opt>Pygmy Right Whale</opt>
+    <opt>Long-tailed Pygmy-possum</opt>
+    <opt>Western Pygmy-possum</opt>
+    <opt>Little Pygmy-possum</opt>
+    <opt>Little Pygmy-possum (South Australia, Victoria)</opt>
+    <opt>Eastern Pygmy-possum</opt>
+    <opt>Northern Freetail Bat</opt>
+    <opt>Pig-footed Bandicoot</opt>
+    <opt>Large-eared Pied Bat</opt>
+    <opt>Gould's Wattled Bat</opt>
+    <opt>Chocolate Wattled Bat</opt>
+    <opt>Hoary Wattled Bat</opt>
+    <opt>Little Pied Bat</opt>
+    <opt>White-footed Rabbit-rat</opt>
+    <opt>Capricorn Rabbit-rat</opt>
+    <opt>Brush-tailed Rabbit-rat</opt>
+    <opt>Brush-tailed Rabbit-rat (Tiwi Islands)</opt>
+    <opt>Brush-tailed Rabbit-rat (Kimberley, Top End)</opt>
+    <opt>Christmas Island Shrew</opt>
+    <opt>Striped Possum</opt>
+    <opt>Brush-tailed Mulgara</opt>
+    <opt>Crest-tailed Mulgara</opt>
+    <opt>Kaluta</opt>
+    <opt>Kowari</opt>
+    <opt>Chuditch, Western Quoll</opt>
+    <opt>Northern Quoll</opt>
+    <opt>Spotted-tailed Quoll</opt>
+    <opt>Spotted-tailed Quoll (north Queensland)</opt>
+    <opt>Spotted-tailed Quoll (south-eastern mainland)</opt>
+    <opt>Spotted-tailed Quoll (Tasmania)</opt>
+    <opt>Eastern Quoll</opt>
+    <opt>Common Dolphin</opt>
+    <opt>Bennett's Tree-kangaroo</opt>
+    <opt>Lumholtz's Tree-kangaroo</opt>
+    <opt>Bare-backed Fruit Bat</opt>
+    <opt>Dugong</opt>
+    <opt>Long-nosed Echymipera</opt>
+    <opt>Southern Right Whale</opt>
+    <opt>Western False Pipistrelle</opt>
+    <opt>Eastern False Pipistrelle</opt>
+    <opt>Pygmy Killer Whale</opt>
+    <opt>Short-finned Pilot Whale</opt>
+    <opt>Long-finned Pilot Whale</opt>
+    <opt>Risso's Dolphin</opt>
+    <opt>Leadbeater's Possum</opt>
+    <opt>Lemuroid Ringtail Possum</opt>
+    <opt>Dusky Leaf-nosed Bat</opt>
+    <opt>Dusky Leaf-nosed Bat (north Queensland), Eastern Dusky Leaf-nosed Bat</opt>
+    <opt>Fawn Leaf-nosed Bat</opt>
+    <opt>Diadem Leaf-nosed Bat</opt>
+    <opt>Diadem Leaf-nosed Bat (Queensland)</opt>
+    <opt>Arnhem Leaf-nosed Bat</opt>
+    <opt>Semon's Leaf-nosed Bat</opt>
+    <opt>Northern Leaf-nosed Bat</opt>
+    <opt>Water-rat, Rakali</opt>
+    <opt>Leopard Seal</opt>
+    <opt>Southern Bottle-nosed Whale</opt>
+    <opt>Musky Rat-kangaroo</opt>
+    <opt>Longman's Beaked Whale</opt>
+    <opt>Golden Bandicoot</opt>
+    <opt>Golden Bandicoot (mainland)</opt>
+    <opt>Golden Bandicoot (Barrow Island)</opt>
+    <opt>Northern Brown Bandicoot</opt>
+    <opt>Southern Brown Bandicoot</opt>
+    <opt>Quenda</opt>
+    <opt>Southern Brown Bandicoot (Nuyts Archipelago)</opt>
+    <opt>Southern Brown Bandicoot (south-eastern)</opt>
+    <opt>Cape York Brown Bandicoot</opt>
+    <opt>Pygmy Sperm Whale</opt>
+    <opt>Dwarf Sperm Whale</opt>
+    <opt>Fraser's Dolphin</opt>
+    <opt>Hourglass Dolphin</opt>
+    <opt>Dusky Dolphin</opt>
+    <opt>Kuluwarri, Central Hare-wallaby</opt>
+    <opt>Spectacled Hare-wallaby</opt>
+    <opt>Spectacled Hare-wallaby (Barrow Island)</opt>
+    <opt>Spectacled Hare-wallaby (mainland)</opt>
+    <opt>Rufous Hare-wallaby</opt>
+    <opt>Rufous Hare-wallaby (Shark Bay)</opt>
+    <opt>Mala</opt>
+    <opt>Rufous Hare-wallaby (Dorre Island)</opt>
+    <opt>Rufous Hare-wallaby (south-western)</opt>
+    <opt>Eastern Hare-wallaby</opt>
+    <opt>Banded Hare-wallaby</opt>
+    <opt>Banded Hare-wallaby (mainland)</opt>
+    <opt>Banded Hare-wallaby (eastern)</opt>
+    <opt>Northern Hairy-nosed Wombat</opt>
+    <opt>Northern Hairy-nosed Wombat (NSW, south-eastern Queensland)</opt>
+    <opt>Northern Hairy-nosed Wombat (central Queensland)</opt>
+    <opt>Southern Hairy-nosed Wombat</opt>
+    <opt>Central Short-tailed Mouse</opt>
+    <opt>Northern Short-tailed Mouse</opt>
+    <opt>Lesser Stick-nest Rat</opt>
+    <opt>Greater Stick-nest Rat</opt>
+    <opt>Weddell Seal</opt>
+    <opt>Southern Right Whale Dolphin</opt>
+    <opt>Crabeater Seal</opt>
+    <opt>Ghost Bat</opt>
+    <opt>Northern Blossom Bat</opt>
+    <opt>Tammar (western)</opt>
+    <opt>Tammar (South Australia)</opt>
+    <opt>Western Grey Kangaroo</opt>
+    <opt>Eastern Grey Kangaroo</opt>
+    <opt>Barrow Island Euro</opt>
+    <opt>Bilby</opt>
+    <opt>Yallara, Lesser Bilby</opt>
+    <opt>Broad-toothed Rat</opt>
+    <opt>Broad-toothed Rat (Tasmania)</opt>
+    <opt>Broad-toothed Rat (mainland)</opt>
+    <opt>Humpback Whale</opt>
+    <opt>Grassland Melomys</opt>
+    <opt>Cape York Melomys</opt>
+    <opt>Fawn-footed Melomys</opt>
+    <opt>Bramble Cay Melomys</opt>
+    <opt>Black-footed Tree-rat</opt>
+    <opt>Black-footed Tree-rat (Kimberley and mainland Northern Territory)</opt>
+    <opt>Black-footed Tree-rat (Melville Island)</opt>
+    <opt>Black-footed Tree-rat (north Queensland)</opt>
+    <opt>Golden-backed Tree-rat</opt>
+    <opt>Andrews' Beaked Whale</opt>
+    <opt>Blainville's Beaked Whale</opt>
+    <opt>Ginko-toothed Beaked Whale</opt>
+    <opt>Gray's Beaked Whale</opt>
+    <opt>Hector's Beaked Whale</opt>
+    <opt>Strap-toothed Beaked Whale</opt>
+    <opt>True's Beaked Whale</opt>
+    <opt>East Coast Free-tailed Bat</opt>
+    <opt>Little Bent-winged Bat</opt>
+    <opt>Southern Bent-winged Bat</opt>
+    <opt>Eastern Bent-winged bat</opt>
+    <opt>Northern Bent-winged Bat</opt>
+    <opt>Southern Elephant Seal</opt>
+    <opt>Flute-nosed Bat</opt>
+    <opt>Large-footed Myotis</opt>
+    <opt>Numbat</opt>
+    <opt>Australian Sea-lion</opt>
+    <opt>Wongai Ningaui</opt>
+    <opt>Pilbara Ningaui</opt>
+    <opt>Southern Ningaui</opt>
+    <opt>Toolache Wallaby</opt>
+    <opt>Agile Wallaby</opt>
+    <opt>Black-striped Wallaby</opt>
+    <opt>Tammar</opt>
+    <opt>Western Brush Wallaby</opt>
+    <opt>Parma Wallaby</opt>
+    <opt>Whiptail Wallaby</opt>
+    <opt>Red-necked Wallaby</opt>
+    <opt>Spinifex Hopping-mouse</opt>
+    <opt>Short-tailed Hopping-mouse</opt>
+    <opt>Northern Hopping-mouse</opt>
+    <opt>Fawn Hopping-mouse</opt>
+    <opt>Dusky Hopping-mouse</opt>
+    <opt>Long-tailed Hopping-mouse</opt>
+    <opt>Large-eared Hopping-mouse</opt>
+    <opt>Mitchell's Hopping-mouse</opt>
+    <opt>Darling Downs Hopping-mouse</opt>
+    <opt>Broad-cheeked Hopping-mouse</opt>
+    <opt>Kakarratul</opt>
+    <opt>Itjaritjari</opt>
+    <opt>Eastern Tube-nosed Bat</opt>
+    <opt>Northern Long-eared Bat</opt>
+    <opt>Eastern Long-eared Bat</opt>
+    <opt>South-eastern Long-eared Bat</opt>
+    <opt>Pallid Long-eared Bat</opt>
+    <opt>Lesser Long-eared Bat</opt>
+    <opt>Gould's Long-eared Bat</opt>
+    <opt>Lord Howe Long-eared Bat</opt>
+    <opt>Western Long-eared Bat</opt>
+    <opt>Central Long-eared Bat</opt>
+    <opt>Tasmanian Long-eared Bat</opt>
+    <opt>Pygmy Long-eared Bat</opt>
+    <opt>Ross Seal</opt>
+    <opt>Bridled Nailtail Wallaby</opt>
+    <opt>Crescent Nailtail Wallaby</opt>
+    <opt>Northern Nailtail Wallaby</opt>
+    <opt>Australian Snubfin Dolphin</opt>
+    <opt>Killer Whale</opt>
+    <opt>Platypus</opt>
+    <opt>Antilopine Wallaroo</opt>
+    <opt>Black Wallaroo</opt>
+    <opt>Euro, Common Wallaroo</opt>
+    <opt>Barrow Island Wallaroo</opt>
+    <opt>Red Kangaroo</opt>
+    <opt>Western Little Free-tailed Bat</opt>
+    <opt>Cape York Free-tailed Bat</opt>
+    <opt>South-western Free-tailed Bat</opt>
+    <opt>Inland Free-tailed Bat</opt>
+    <opt>South-eastern Free-tailed Bat</opt>
+    <opt>Eastern Free-tailed Bat</opt>
+    <opt>Dibbler</opt>
+    <opt>Melon-headed Whale</opt>
+    <opt>Western Barred Bandicoot</opt>
+    <opt>Western Barred Bandicoot (eastern)</opt>
+    <opt>Desert Bandicoot</opt>
+    <opt>Liverpool Plains Striped Bandicoot</opt>
+    <opt>Eastern Barred Bandicoot</opt>
+    <opt>Eastern Barred Bandicoot (Tasmania)</opt>
+    <opt>Eastern Barred Bandicoot (Victoria)</opt>
+    <opt>Marl</opt>
+    <opt>Long-nosed Bandicoot</opt>
+    <opt>South-eastern Striped Bandicoot</opt>
+    <opt>Northern Long-nosed Bandicoot</opt>
+    <opt>Nullarbor Barred bandicoot</opt>
+    <opt>Central Greater Glider</opt>
+    <opt>Northern Greater Glider</opt>
+    <opt>Southern Greater Glider</opt>
+    <opt>Greater Glider (north-eastern Queensland)</opt>
+    <opt>Greater Glider (south-eastern)</opt>
+    <opt>Yellow-bellied Glider</opt>
+    <opt>Yellow-bellied Glider (south-eastern)</opt>
+    <opt>Yellow-bellied Glider (Wet Tropics)</opt>
+    <opt>Sugar Glider</opt>
+    <opt>Mahogany Glider</opt>
+    <opt>Squirrel Glider</opt>
+    <opt>Allied Rock-wallaby</opt>
+    <opt>Short-eared Rock-wallaby</opt>
+    <opt>Short-eared Rock-wallaby (Victoria River District)</opt>
+    <opt>Monjon</opt>
+    <opt>Cape York Rock-wallaby</opt>
+    <opt>Nabarlek</opt>
+    <opt>Nabarlek (Top End)</opt>
+    <opt>Nabarlek (Victoria River District)</opt>
+    <opt>Nabarlek (Kimberley)</opt>
+    <opt>Godman's Rock-wallaby</opt>
+    <opt>Herbert's Rock-wallaby</opt>
+    <opt>Unadorned Rock-wallaby</opt>
+    <opt>Black-footed Rock-wallaby</opt>
+    <opt>Recherche Rock-wallaby</opt>
+    <opt>Black-flanked Rock-wallaby</opt>
+    <opt>Black-footed Rock-wallaby (MacDonnell Ranges), Warru</opt>
+    <opt>Pearson Island Rock-wallaby</opt>
+    <opt>Black-footed Rock-wallaby (west Kimberley)</opt>
+    <opt>Mareeba Rock-wallaby</opt>
+    <opt>Brush-tailed Rock-wallaby</opt>
+    <opt>Proserpine Rock-wallaby</opt>
+    <opt>Purple-necked Rock-wallaby</opt>
+    <opt>Rothschild's Rock-wallaby</opt>
+    <opt>Mount Claro Rock-wallaby, Sharman's Rock-wallaby</opt>
+    <opt>Eastern Short-eared Rock-wallaby</opt>
+    <opt>Yellow-footed Rock-wallaby</opt>
+    <opt>Yellow-footed Rock-wallaby (central-western Queensland)</opt>
+    <opt>Yellow-footed Rock-wallaby (South Australia, New South Wales)</opt>
+    <opt>Wogoit, Rock Ringtail Possum</opt>
+    <opt>Southern Common Cuscus</opt>
+    <opt>Red-tailed Phascogale</opt>
+    <opt>Northern Brush-tailed Phascogale</opt>
+    <opt>Brush-tailed Phascogale</opt>
+    <opt>Brush-tailed Phascogale (Kimberley)</opt>
+    <opt>Brush-tailed Phascogale (eastern)</opt>
+    <opt>Wambenga</opt>
+    <opt>Koala</opt>
+    <opt>Koala (combined populations of Qld, NSW and the ACT)</opt>
+    <opt>New Zealand Sea-lion</opt>
+    <opt>Spectacled Porpoise</opt>
+    <opt>Golden-tipped Bat</opt>
+    <opt>Sperm Whale</opt>
+    <opt>Forest Pipistrelle</opt>
+    <opt>Christmas  Island Pipistrelle</opt>
+    <opt>Northern Pipistrelle</opt>
+    <opt>Giles' Planigale</opt>
+    <opt>Long-tailed Planigale</opt>
+    <opt>Common Planigale</opt>
+    <opt>Narrow-nosed Planigale</opt>
+    <opt>Tree Mouse</opt>
+    <opt>Gilbert's Potoroo</opt>
+    <opt>Long-footed Potoroo</opt>
+    <opt>Broad-faced Potoroo</opt>
+    <opt>Long-nosed Potoroo</opt>
+    <opt>Long-nosed Potoroo (Tasmania)</opt>
+    <opt>Long-nosed Potoroo (south-eastern Queensland, north-eastern New South Wales)</opt>
+    <opt>Long-nosed Potoroo (south-eastern mainland)</opt>
+    <opt>Sandstone Antechinus</opt>
+    <opt>Fat-tailed Antechinus</opt>
+    <opt>Carpentarian Antechinus</opt>
+    <opt>Ningbing Antechinus</opt>
+    <opt>Rory's Antechinus</opt>
+    <opt>Woolley's Antechinus</opt>
+    <opt>Western Ringtail Possum</opt>
+    <opt>Common Ringtail Possum</opt>
+    <opt>Green Ringtail Possum</opt>
+    <opt>Daintree Ringtail Possum</opt>
+    <opt>Herbert River Ringtail Possum</opt>
+    <opt>Ash-grey Mouse</opt>
+    <opt>Silky Mouse</opt>
+    <opt>Long-eared Mouse</opt>
+    <opt>Plains Mouse</opt>
+    <opt>Bolam's Mouse</opt>
+    <opt>Kakadu Pebble-mouse</opt>
+    <opt>Western Pebble-mouse</opt>
+    <opt>Delicate Mouse</opt>
+    <opt>Desert Mouse</opt>
+    <opt>Djoongari, Shark Bay Mouse</opt>
+    <opt>Smoky Mouse</opt>
+    <opt>Blue-grey Mouse</opt>
+    <opt>Gould's Mouse</opt>
+    <opt>Eastern Chestnut Mouse</opt>
+    <opt>Sandy Inland Mouse</opt>
+    <opt>Long-tailed Mouse</opt>
+    <opt>Central Pebble-mouse</opt>
+    <opt>Western Chestnut Mouse</opt>
+    <opt>New Holland Mouse</opt>
+    <opt>Western Mouse</opt>
+    <opt>Hastings River Mouse</opt>
+    <opt>Eastern Pebble-mouse</opt>
+    <opt>Pilliga Mouse</opt>
+    <opt>Heath Mouse</opt>
+    <opt>False Killer Whale</opt>
+    <opt>Black Flying-fox</opt>
+    <opt>Dusky Flying-fox</opt>
+    <opt>Spectacled Flying-fox</opt>
+    <opt>Large-eared Flying-fox</opt>
+    <opt>Christmas Island Flying-fox</opt>
+    <opt>Grey-headed Flying-fox</opt>
+    <opt>Little Red Flying-fox</opt>
+    <opt>Dusky Rat</opt>
+    <opt>Bush Rat</opt>
+    <opt>Cape York Rat</opt>
+    <opt>Swamp Rat</opt>
+    <opt>Maclear's Rat</opt>
+    <opt>Bulldog Rat</opt>
+    <opt>Canefield Rat</opt>
+    <opt>Pale Field-rat</opt>
+    <opt>Pale Field-rat (north-western)</opt>
+    <opt>Long-haired Rat</opt>
+    <opt>Lesser Large-eared Horseshoe-bat</opt>
+    <opt>Eastern Horseshoe-bat</opt>
+    <opt>Greater Large-eared Horseshoe-bat</opt>
+    <opt>Orange Leaf-nosed Bat</opt>
+    <opt>Pilbara Leaf-nosed Bat</opt>
+    <opt>Yellow-bellied Sheath-tailed Bat</opt>
+    <opt>Cape York Sheath-tailed Bat, Papuan Sheath-tailed Bat</opt>
+    <opt>Bare-rumped Sheath-tailed Bat</opt>
+    <opt>Tasmanian Devil</opt>
+    <opt>Greater Broad-nosed Bat</opt>
+    <opt>Inland Broad-nosed Bat</opt>
+    <opt>Little Broad-nosed Bat</opt>
+    <opt>Eastern Broad-nosed Bat</opt>
+    <opt>Northern Broad-nosed Bat</opt>
+    <opt>Bristle-faced Free-tailed Bat</opt>
+    <opt>Quokka</opt>
+    <opt>Chestnut Dunnart</opt>
+    <opt>Kakadu Dunnart</opt>
+    <opt>Butler's Dunnart</opt>
+    <opt>Fat-tailed Dunnart</opt>
+    <opt>Little Long-tailed Dunnart</opt>
+    <opt>Julia Creek Dunnart</opt>
+    <opt>Gilbert's Dunnart</opt>
+    <opt>White-tailed Dunnart</opt>
+    <opt>Grey-bellied Dunnart</opt>
+    <opt>Kangaroo Island Dunnart</opt>
+    <opt>Boullanger Island Dunnart</opt>
+    <opt>Hairy-footed Dunnart</opt>
+    <opt>White-footed Dunnart</opt>
+    <opt>White-footed Dunnart (north Queensland)</opt>
+    <opt>White-footed Dunnart (south-eastern mainland)</opt>
+    <opt>Long-tailed Dunnart</opt>
+    <opt>Stripe-faced Dunnart</opt>
+    <opt>Common Dunnart</opt>
+    <opt>Common Dunnart (north Queensland)</opt>
+    <opt>Ooldea Dunnart</opt>
+    <opt>Sandhill Dunnart</opt>
+    <opt>Red-cheeked Dunnart</opt>
+    <opt>Lesser Hairy-footed Dunnart</opt>
+    <opt>Australian Hump-backed Dolphin</opt>
+    <opt>Common Spotted Cuscus</opt>
+    <opt>Pantropical Spotted Dolphin</opt>
+    <opt>Striped Dolphin</opt>
+    <opt>Long-snouted Spinner Dolphin</opt>
+    <opt>Dwarf Spinner Dolphin</opt>
+    <opt>Rough-toothed Dolphin</opt>
+    <opt>Eastern Blossom Bat</opt>
+    <opt>Short-beaked Echidna</opt>
+    <opt>Kangaroo Island Echidna</opt>
+    <opt>Coastal Sheath-tailed Bat</opt>
+    <opt>Common Sheath-tailed Bat</opt>
+    <opt>Hill's Sheath-tailed Bat</opt>
+    <opt>Arnhem Sheath-tailed Bat</opt>
+    <opt>Troughton's Sheath-tailed Bat</opt>
+    <opt>Honey Possum</opt>
+    <opt>Shepherd's Beaked Whale</opt>
+    <opt>Thylacine</opt>
+    <opt>Tasmanian Pademelon, Rufous-bellied Pademelon</opt>
+    <opt>Red-legged Pademelon</opt>
+    <opt>Red-necked Pademelon</opt>
+    <opt>Short-eared Brushtail Possum</opt>
+    <opt>Mountain Brushtail Possum</opt>
+    <opt>Common Brushtail Possum</opt>
+    <opt>Common Brushtail Possum (north-western)</opt>
+    <opt>Kumarl</opt>
+    <opt>Long-beaked Bottle-nosed Dolphin</opt>
+    <opt>Burrunan Dolphin</opt>
+    <opt>Bottlenose Dolphin</opt>
+    <opt>Giant White-tailed Rat</opt>
+    <opt>Pygmy White-tailed Rat</opt>
+    <opt>Northern Cave Bat</opt>
+    <opt>Yellow-lipped Cave Bat</opt>
+    <opt>Finlayson's Cave Bat, Inland Cave Bat</opt>
+    <opt>Southern Forest Bat</opt>
+    <opt>Inland Forest Bat</opt>
+    <opt>Large Forest Bat</opt>
+    <opt>Eastern Forest Bat</opt>
+    <opt>Eastern Cave Bat</opt>
+    <opt>Little Forest Bat</opt>
+    <opt>Common Wombat</opt>
+    <opt>Common Wombat (Bass Strait Islands)</opt>
+    <opt>Swamp Wallaby</opt>
+    <opt>Scaly-tailed Possum</opt>
+    <opt>Water Mouse</opt>
+    <opt>Western Long-beaked Echidna</opt>
+    <opt>Cuvier's Beaked Whale</opt>
+    <opt>Common Rock-rat</opt>
+    <opt>Arnhem Rock-rat</opt>
+    <opt>Carpentarian Rock-rat</opt>
+    <opt>Central Rock-rat</opt>
+    <opt>Kimberley Rock-rat</opt>
+  </opt>
+  <opt>
+    Plants
+    <opt>Blunt wattle</opt>
+    <opt>Gibson wattle</opt>
+    <opt>Chidarcooping wattle</opt>
+    <opt>Wongan gully wattle</opt>
+    <opt>Kundip wattle</opt>
+    <opt>Wundowlin wattle; ghost wattle</opt>
+    <opt>Tangled wattle</opt>
+    <opt>Isis tamarind</opt>
+    <opt>Giant andersonia</opt>
+    <opt>Two Peoples Bay Andersonia</opt>
+    <opt>Matchstick banksia</opt>
+    <opt>Kamballup banksia</opt>
+    <opt>Stirling Range dryandra</opt>
+    <opt>Granite banksia</opt>
+    <opt>Freycinet heath; bearded heath</opt>
+    <opt>Crimson spider-orchid</opt>
+    <opt>Dunsborough spider-orchid</opt>
+    <opt>Wrinkled dollybush</opt>
+    <opt>Prostrate flame pea</opt>
+    <opt>Trigwell's rulingia</opt>
+    <opt>Drummond's conostylis</opt>
+    <opt>Grass conostylis</opt>
+    <opt>Mogumber bell</opt>
+    <opt>Gillam's darwinia</opt>
+    <opt>Abba bell</opt>
+    <opt>Witter's mountain bell</opt>
+    <opt>Cunderdin daviesia</opt>
+    <opt>Wongan cactus</opt>
+    <opt>Maroon-flowered Daviesia</opt>
+    <opt>Norseman pea</opt>
+    <opt>Paddle-leaf Daviesia</opt>
+    <opt>Stirling Range daviesia</opt>
+    <opt>Milky emu-bush</opt>
+    <opt>Gaping leek orchid</opt>
+    <opt>Yellow-leafed gastrolobium</opt>
+    <opt>Split-leaved grevillea</opt>
+    <opt>Pyathara grevillea</opt>
+    <opt>Corrigin grevillea</opt>
+    <opt>Net-veined gyrostemon</opt>
+    <opt>Hook-leaf isopogon; Albany cone-bush</opt>
+    <opt>Fairall's honeysuckle</opt>
+    <opt>Round-leaf honeysuckle</opt>
+    <opt>Stirling Range beard-heath</opt>
+    <opt>Bulberin nut</opt>
+    <opt>Keighery's macarthuria</opt>
+    <opt>Pineapple Zamia; Twisted Ricketts Wood</opt>
+    <opt>Hairy-fruited billardiera</opt>
+    <opt>Angus's onion orchid</opt>
+    <opt>Small-flowered snottygobble</opt>
+    <opt>White-flowered Philotheca</opt>
+    <opt>Wyalkatchem Foxglove</opt>
+    <opt>Turnip copperburr</opt>
+    <opt>Stiff groundsel</opt>
+    <opt>Wongan Hills triggerplant</opt>
+    <opt>Bancrofts symonanthus</opt>
+    <opt>Quartz-loving synaphea</opt>
+    <opt>Granite tetratheca</opt>
+    <opt>Belyando cobblers peg</opt>
+    <opt>Glossy spice bush</opt>
+    <opt>White featherflower</opt>
+    <opt>Hughan's featherflower</opt>
+    <opt>Long-flowered nancy</opt>
+    <opt>Bago Leek-orchid</opt>
+    <opt>Kelton's leek-orchid</opt>
+    <opt>Spiral-pod wattle</opt>
+    <opt>Hairy-stemmed zig-zag wattle</opt>
+    <opt>Swamp honeypot</opt>
+    <opt>Swamp starflower</opt>
+    <opt>Irwin's conostylis</opt>
+    <opt>Western cyphanthera</opt>
+    <opt>Prickly honeysuckle</opt>
+    <opt>Button wrinklewort</opt>
+    <opt>Green Hill thomasia</opt>
+    <opt>Scaly-leaved featherflower</opt>
+    <opt>Wongan featherflower</opt>
+    <opt>Bago Leek-orchid</opt>
+    <opt>Kelton's leek-orchid</opt>
+    <opt>Hopetoun beard-orchid</opt>
+  </opt>
+</opts>

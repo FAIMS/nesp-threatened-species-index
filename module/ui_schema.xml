@@ -51,7 +51,6 @@
               <Source_Provider/>
               <Location_Name/>
               <Search_Type_Description/>
-              <Source_Primary_Key/>
               <Start_Date/>
               <Finish_Date/>
               <Colgroup_1>
@@ -76,7 +75,26 @@
               <Area_m2/>
               <Length_km/>
               <Site_Name/>
-              <Coordinates/>
+              <Colgroup_3>
+                <Col_1>
+                  <Latitude/>
+                </Col_1>
+                <Col_2>
+                  <Longitude/>
+                </Col_2>
+              </Colgroup_3>
+              <Colgroup_4>
+                <Col_1>
+                  <Northing/>
+                </Col_1>
+                <Col_2>
+                  <Easting/>
+                </Col_2>
+                <Col_3>
+                  <Accuracy/>
+                </Col_3>
+              </Colgroup_4>
+              <Take_From_GPS_1/>
               <Projection_Reference/>
               <Positional_Accuracy_External_m/>
               <Survey_Comments/>
@@ -104,6 +122,12 @@
       <bind nodeset="/faims/Control/ID_Numbers/Next_Source_ID" type="decimal"/>
       <bind nodeset="/faims/Record/Survey/Start_Date" type="date"/>
       <bind nodeset="/faims/Record/Survey/Finish_Date" type="date"/>
+      <bind nodeset="/faims/Record/Survey/Duration_in_Days_Nights" type="decimal"/>
+      <bind nodeset="/faims/Record/Survey/Number_of_Traps_per_Day_Night" type="decimal"/>
+      <bind nodeset="/faims/Record/Survey/Area_m2" type="decimal"/>
+      <bind nodeset="/faims/Record/Survey/Length_km" type="decimal"/>
+      <bind nodeset="/faims/Record/Survey/Positional_Accuracy_External_m" type="decimal"/>
+      <bind nodeset="/faims/Sighting/Sighting/Count" type="decimal"/>
     </model>
   </h:head>
   <h:body>
@@ -220,9 +244,6 @@
             <value>Options not loaded</value>
           </item>
         </select1>
-        <input faims_attribute_name="Source Primary Key" faims_attribute_type="measure" ref="Source_Primary_Key" faims_style_class="required">
-          <label>{Source_Primary_Key}</label>
-        </input>
         <input faims_attribute_name="Start Date" faims_attribute_type="measure" ref="Start_Date" faims_style_class="required">
           <label>{Start_Date}</label>
         </input>
@@ -277,12 +298,52 @@
         <input faims_attribute_name="Site Name" faims_attribute_type="measure" ref="Site_Name" faims_style_class="required">
           <label>{Site_Name}</label>
         </input>
-        <input faims_attribute_name="Coordinates" faims_attribute_type="measure" ref="Coordinates" faims_style_class="required">
-          <label>{Coordinates}</label>
-        </input>
-        <input faims_attribute_name="Projection Reference" faims_attribute_type="measure" ref="Projection_Reference" faims_style_class="required">
+        <group ref="Colgroup_3" faims_style="orientation">
+          <label/>
+          <group ref="Col_1" faims_style="even">
+            <label/>
+            <input faims_attribute_name="Latitude" faims_attribute_type="measure" ref="Latitude" faims_read_only="true">
+              <label>{Latitude}</label>
+            </input>
+          </group>
+          <group ref="Col_2" faims_style="even">
+            <label/>
+            <input faims_attribute_name="Longitude" faims_attribute_type="measure" ref="Longitude" faims_read_only="true">
+              <label>{Longitude}</label>
+            </input>
+          </group>
+        </group>
+        <group ref="Colgroup_4" faims_style="orientation">
+          <label/>
+          <group ref="Col_1" faims_style="even">
+            <label/>
+            <input faims_attribute_name="Northing" faims_attribute_type="measure" ref="Northing" faims_read_only="true">
+              <label>{Northing}</label>
+            </input>
+          </group>
+          <group ref="Col_2" faims_style="even">
+            <label/>
+            <input faims_attribute_name="Easting" faims_attribute_type="measure" ref="Easting" faims_read_only="true">
+              <label>{Easting}</label>
+            </input>
+          </group>
+          <group ref="Col_3" faims_style="even">
+            <label/>
+            <input faims_attribute_name="Accuracy" faims_attribute_type="measure" ref="Accuracy" faims_read_only="true">
+              <label>{Accuracy}</label>
+            </input>
+          </group>
+        </group>
+        <trigger ref="Take_From_GPS_1">
+          <label>{Take_From_GPS}</label>
+        </trigger>
+        <select1 faims_attribute_name="Projection Reference" faims_attribute_type="vocab" ref="Projection_Reference" faims_style_class="required">
           <label>{Projection_Reference}</label>
-        </input>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
         <input faims_attribute_name="Positional Accuracy External m" faims_attribute_type="measure" ref="Positional_Accuracy_External_m">
           <label>{Positional_Accuracy_External__m_}</label>
         </input>
@@ -318,15 +379,27 @@
       <label>{Sighting}</label>
       <group ref="Sighting">
         <label>{Sighting}</label>
-        <input faims_attribute_name="Taxon ID" faims_attribute_type="measure" ref="Taxon_ID" faims_style_class="required">
+        <select1 faims_attribute_name="Taxon ID" faims_attribute_type="vocab" ref="Taxon_ID" faims_style_class="required">
           <label>{Taxon_ID}</label>
-        </input>
-        <input faims_attribute_name="Common Name" faims_attribute_type="measure" ref="Common_Name">
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
+        <select1 faims_attribute_name="Common Name" faims_attribute_type="vocab" ref="Common_Name">
           <label>{Common_Name}</label>
-        </input>
-        <input faims_attribute_name="Scientific Name" faims_attribute_type="measure" ref="Scientific_Name" faims_style_class="required">
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
+        <select1 faims_attribute_name="Scientific Name" faims_attribute_type="vocab" ref="Scientific_Name" faims_style_class="required">
           <label>{Scientific_Name}</label>
-        </input>
+          <item>
+            <label>Options not loaded</label>
+            <value>Options not loaded</value>
+          </item>
+        </select1>
         <input faims_attribute_name="Count" faims_attribute_type="measure" ref="Count" faims_style_class="required">
           <label>{Count}</label>
         </input>

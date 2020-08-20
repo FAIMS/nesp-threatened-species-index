@@ -18,7 +18,7 @@
 </Control>
 
 <Record>
-  <fmt>{{Source_ID}}{{Source_Primary_Key}} {{Source_Description}}</fmt>
+  <fmt>{{Source_ID}}{{Source_Description}}</fmt>
 
   <Survey>
     <Source_ID f="notnull autonum"/>
@@ -56,11 +56,6 @@
         <opt>Method 2</opt>
       </opts>
     </Search_Type_Description>
-    <Source_Primary_Key f="notnull">
-      <desc>
-        This text field is a concatenation between SourceDesc and the primary key in the original data (if existing) or a consecutive number starting at 1. Each row needs to have a unique text field.
-      </desc>
-    </Source_Primary_Key>
     <Start_Date b="date" f="notnull">
       <desc>
         Populate the date when monitoring was started and ended (in case of multiple days). Format date as DD/MM/YYYY. Use the format 00/00/2001 if only the monitoring year is available and 00/10/2001 if only the month and year are available. StartDate is REQUIRED.
@@ -92,25 +87,25 @@
         Populate this field on monitoring duration by entering the number of days or nights spent e.g. trap days/nights. OPTIONAL.
       </desc>
     </Duration_in_Minutes>
-    <Duration_in_Days_Nights>
+    <Duration_in_Days_Nights b="decimal">
       Duration in Days/Nights
       <desc>
         Populate the duration of monitoring in minutes. OPTIONAL.
       </desc>
     </Duration_in_Days_Nights>
-    <Number_of_Traps_per_Day_Night>
+    <Number_of_Traps_per_Day_Night b="decimal">
       Number of Traps per Day/Night
       <desc>
         If you use traps, populate this field with information on the number of traps or number of cameras set at a site per day or night. OPTIONAL.
       </desc>
     </Number_of_Traps_per_Day_Night>
-    <Area_m2>
+    <Area_m2 b="decimal">
       Area (m²)
       <desc>
         Populate this field on area surveyed in square meters (m²). Note that 1 hectare are 10000 m². OPTIONAL.
       </desc>
     </Area_m2>
-    <Length_km>
+    <Length_km b="decimal">
       Length (km)
       <desc>
         Populate this field on length of transect surveyed in km. OPTIONAL.
@@ -121,17 +116,14 @@
         This text field describes the name of a (fixed) site. Sites are the spatial basis for the time series, i.e. each site will form a different time series.
       </desc>
     </Site_Name>
-    <Coordinates f="notnull">
-      <desc>
-        Populate the latitude/longitude or easting/northing coordinates of the original data format. Ensure that the information in the ProjectionReference is entered.
-      </desc>
-    </Coordinates>
+    <gps/>
     <Projection_Reference f="notnull">
       <desc>
         Specify the ProjectionReference of the XY coordinates entered - see ‘Projection reference codes’ tab for a full list of options or contact tsx@uq.edu.au if your ProjectionReference is not available.
       </desc>
+      <!--@SOURCE: vocab/projection-reference.xml-->
     </Projection_Reference>
-    <Positional_Accuracy_External_m>
+    <Positional_Accuracy_External_m b="decimal">
       Positional Accuracy External (m)
       <desc>
         Enter the positional accuracy of spatial coordinates provided in m.
@@ -168,7 +160,7 @@
   <fmt>{{Taxon_ID}}</fmt>
 
   <Sighting>
-    <Taxon_ID f="notnull">
+    <Taxon_ID t="dropdown" f="notnull">
       <desc>
         For birds and mammals: select one of Taxon ID, Common Name or Scientific Name from the appropriate ‘Taxonomic list’ tab. REQUIRED.
 
@@ -176,10 +168,15 @@
 
         Taxon ID, Common Name or Scientific Name have to be exactly as specified on the appropriate ‘Taxonomic list’ tabs e.g. ‘Perameles gunnii Victorian subspecies’. Including any surplus characters or spaces will lead to errors.
       </desc>
+      <!--@SOURCE: vocab/taxon-id.xml-->
     </Taxon_ID>
-    <Common_Name/>
-    <Scientific_Name f="notnull"/>
-    <Count f="notnull">
+    <Common_Name t="dropdown">
+      <!--@SOURCE: vocab/common-name.xml-->
+    </Common_Name>
+    <Scientific_Name t="dropdown" f="notnull">
+      <!--@SOURCE: vocab/scientific-name.xml-->
+    </Scientific_Name>
+    <Count b="decimal" f="notnull">
       <desc>
         Specify 0 for absences/non-detections.
       </desc>
@@ -236,6 +233,11 @@
 
 <logic><![CDATA[
 <!--@SOURCE: logic/time.bsh-->
+
+<!--@SOURCE: logic/taxon-id.bsh-->
+<!--@SOURCE: logic/common-name.bsh-->
+<!--@SOURCE: logic/scientific-name.bsh-->
+<!--@SOURCE: logic/menu-correspondence.bsh-->
 ]]></logic>
 
 </module>

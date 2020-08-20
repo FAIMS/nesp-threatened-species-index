@@ -2,3 +2,4 @@ upload_selenium.py
 upload.py
 *.swp
 *.swo
+upload*.py

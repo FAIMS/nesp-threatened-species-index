@@ -1,0 +1,54 @@
+<opts>
+  <opt>GDA94</opt>
+  <opt>AGD66</opt>
+  <opt>AGD84</opt>
+  <opt>WGS84</opt>
+  <opt>AGD66 / AMG zone 48</opt>
+  <opt>AGD66 / AMG zone 49</opt>
+  <opt>AGD66 / AMG zone 50</opt>
+  <opt>AGD66 / AMG zone 51</opt>
+  <opt>AGD66 / AMG zone 52</opt>
+  <opt>AGD66 / AMG zone 53</opt>
+  <opt>AGD66 / AMG zone 54</opt>
+  <opt>AGD66 / AMG zone 55</opt>
+  <opt>AGD66 / AMG zone 56</opt>
+  <opt>AGD66 / AMG zone 57</opt>
+  <opt>AGD66 / AMG zone 58</opt>
+  <opt>AGD84 / AMG zone 48</opt>
+  <opt>AGD84 / AMG zone 49</opt>
+  <opt>AGD84 / AMG zone 50</opt>
+  <opt>AGD84 / AMG zone 51</opt>
+  <opt>AGD84 / AMG zone 52</opt>
+  <opt>AGD84 / AMG zone 53</opt>
+  <opt>AGD84 / AMG zone 54</opt>
+  <opt>AGD84 / AMG zone 55</opt>
+  <opt>AGD84 / AMG zone 56</opt>
+  <opt>AGD84 / AMG zone 57</opt>
+  <opt>AGD84 / AMG zone 58</opt>
+  <opt>GDA94 / MGA zone 48</opt>
+  <opt>GDA94 / MGA zone 49</opt>
+  <opt>GDA94 / MGA zone 50</opt>
+  <opt>GDA94 / MGA zone 51</opt>
+  <opt>GDA94 / MGA zone 52</opt>
+  <opt>GDA94 / MGA zone 53</opt>
+  <opt>GDA94 / MGA zone 54</opt>
+  <opt>GDA94 / MGA zone 55</opt>
+  <opt>GDA94 / MGA zone 56</opt>
+  <opt>GDA94 / MGA zone 57</opt>
+  <opt>GDA94 / MGA zone 58</opt>
+  <opt>GDA94 / Geoscience Australia Lambert</opt>
+  <opt>GDA94 / Australian Albers</opt>
+  <opt>Australia Albers Equal Area Conic</opt>
+  <opt>AGD66 / Vicgrid66</opt>
+  <opt>GDA94 / Vicgrid94</opt>
+  <opt>GDA94 / SA Lambert</opt>
+  <opt>GDA94 / NSW Lambert</opt>
+  <opt>NSW AGD_1966_Lambert_Conformal_Conic</opt>
+  <opt>ACT</opt>
+  <opt>WGS84 / Australian Antarctic Polar Stereographic</opt>
+  <opt>WGS84 / Australian Antarctic Lambert</opt>
+  <opt>Australian Antarctic</opt>
+  <opt>Australian Antarctic (geocentric)</opt>
+  <opt>Cocos Islands 1965</opt>
+  <opt>Australian Antarctic (deg)</opt>
+</opts>
