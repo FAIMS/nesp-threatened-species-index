@@ -332,6 +332,8 @@ REF_TO_TYPE.put("Record/Survey/Start_Date", "input");
 REF_TO_TYPE.put("Record/Survey/Finish_Date", "input");
 REF_TO_TYPE.put("Record/Survey/Start_Time", "input");
 REF_TO_TYPE.put("Record/Survey/Finish_Time", "input");
+REF_TO_TYPE.put("Record/Survey/Set_Start_Time", "button");
+REF_TO_TYPE.put("Record/Survey/Set_Finish_Time", "button");
 REF_TO_TYPE.put("Record/Survey/Duration_in_Minutes", "input");
 REF_TO_TYPE.put("Record/Survey/Duration_in_Days_Nights", "input");
 REF_TO_TYPE.put("Record/Survey/Number_of_Traps_per_Day_Night", "input");
@@ -4307,6 +4309,91 @@ addOnEvent("Record/Sighting/Sightings", "click", "loadEntity()");
 /*                             HANDWRITTEN LOGIC                              */
 /******************************************************************************/
 
+/************************************ TIME ************************************/
+
+import java.text.SimpleDateFormat;
+import java.util.concurrent.TimeUnit;
+
+final String REF_START_DATE =
+  "Record/Survey/Start_Date";
+final String REF_FINISH_DATE =
+  "Record/Survey/Finish_Date";
+
+final String REF_START_TIME =
+  "Record/Survey/Start_Time";
+final String REF_FINISH_TIME =
+  "Record/Survey/Finish_Time";
+
+final String REF_SET_START_TIME =
+  "Record/Survey/Set_Start_Time";
+final String REF_SET_FINISH_TIME =
+  "Record/Survey/Set_Finish_Time";
+
+final String REF_DURATION_IN_MINUTES =
+  "Record/Survey/Duration_in_Minutes";
+final String REF_DURATION_IN_DAYS_NIGHTS =
+  "Record/Survey/Duration_in_Days_Nights";
+
+long getDateDiff(Date date1, Date date2, TimeUnit timeUnit) {
+    long diffInMillies = date2.getTime() - date1.getTime();
+    return timeUnit.convert(diffInMillies, TimeUnit.MILLISECONDS);
+}
+
+String getTime() {
+  return getTimestampNow("HH:mm", false);
+}
+
+Date getUserEnteredDate(String refDate, String refTime) {
+  String val = getFieldValue(refDate) + " " + getFieldValue(refTime);
+  SimpleDateFormat parser = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+  try {
+    return parser.parse(val);
+  } catch (Exception e) {
+    return null;
+  }
+}
+
+void setStartTime() {
+  setFieldValue(REF_START_TIME, getTime());
+}
+
+void setFinishTime() {
+  setFieldValue(REF_FINISH_TIME, getTime());
+
+  setDurationInMinutes();
+  setDurationInDaysNights();
+}
+
+void setDuration(String refDest, TimeUnit unit) {
+  Date start  = getUserEnteredDate(REF_START_DATE, REF_START_TIME);
+  Date finish = getUserEnteredDate(REF_FINISH_DATE, REF_FINISH_TIME);
+
+  if (start  == null) return;
+  if (finish == null) return;
+
+  String mins = "" + getDateDiff(start, finish, unit);
+  setFieldValue(refDest, mins);
+}
+
+void setDurationInMinutes() {
+  setDuration(REF_DURATION_IN_MINUTES, TimeUnit.MINUTES);
+}
+
+void setDurationInDaysNights() {
+  setDuration(REF_DURATION_IN_DAYS_NIGHTS, TimeUnit.DAYS);
+}
+
+
+addOnEvent(
+    REF_SET_START_TIME,
+    "click",
+    "setStartTime()"
+);
+addOnEvent(
+    REF_SET_FINISH_TIME,
+    "click",
+    "setFinishTime()"
+);
 
 
 /******************************************************************************/

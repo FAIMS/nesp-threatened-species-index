@@ -18,7 +18,7 @@
 </Control>
 
 <Record>
-  <fmt>{{Source_ID}} {{Source_Primary_Key}}</fmt>
+  <fmt>{{Source_ID}}{{Source_Primary_Key}} {{Source_Description}}</fmt>
 
   <Survey>
     <Source_ID f="notnull autonum"/>
@@ -61,26 +61,32 @@
         This text field is a concatenation between SourceDesc and the primary key in the original data (if existing) or a consecutive number starting at 1. Each row needs to have a unique text field.
       </desc>
     </Source_Primary_Key>
-    <Start_Date f="notnull">
+    <Start_Date b="date" f="notnull">
       <desc>
         Populate the date when monitoring was started and ended (in case of multiple days). Format date as DD/MM/YYYY. Use the format 00/00/2001 if only the monitoring year is available and 00/10/2001 if only the month and year are available. StartDate is REQUIRED.
       </desc>
     </Start_Date>
-    <Finish_Date>
+    <Finish_Date b="date">
       <desc>
         Populate the date when monitoring was started and ended (in case of multiple days). Format date as DD/MM/YYYY. Use the format 00/00/2001 if only the monitoring year is available and 00/10/2001 if only the month and year are available. FinishDate is OPTIONAL.
       </desc>
     </Finish_Date>
-    <Start_Time>
-      <desc>
-        Populate the StartTime and FinishTime of monitoring as HH:MM in 24 hours format e.g. 16:00. OPTIONAL.
-      </desc>
-    </Start_Time>
-    <Finish_Time>
-      <desc>
-        Populate the StartTime and FinishTime of monitoring as HH:MM in 24 hours format e.g. 16:00. OPTIONAL.
-      </desc>
-    </Finish_Time>
+    <cols>
+      <Start_Time>
+        <desc>
+          Populate the StartTime and FinishTime of monitoring as HH:MM in 24 hours format e.g. 16:00. OPTIONAL.
+        </desc>
+      </Start_Time>
+      <Finish_Time>
+        <desc>
+          Populate the StartTime and FinishTime of monitoring as HH:MM in 24 hours format e.g. 16:00. OPTIONAL.
+        </desc>
+      </Finish_Time>
+    </cols>
+    <cols>
+      <Set_Start_Time t="button"/>
+      <Set_Finish_Time t="button"/>
+    </cols>
     <Duration_in_Minutes>
       <desc>
         Populate this field on monitoring duration by entering the number of days or nights spent e.g. trap days/nights. OPTIONAL.
@@ -229,6 +235,7 @@
 
 
 <logic><![CDATA[
+<!--@SOURCE: logic/time.bsh-->
 ]]></logic>
 
 </module>

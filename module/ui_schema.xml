@@ -54,8 +54,22 @@
               <Source_Primary_Key/>
               <Start_Date/>
               <Finish_Date/>
-              <Start_Time/>
-              <Finish_Time/>
+              <Colgroup_1>
+                <Col_1>
+                  <Start_Time/>
+                </Col_1>
+                <Col_2>
+                  <Finish_Time/>
+                </Col_2>
+              </Colgroup_1>
+              <Colgroup_2>
+                <Col_1>
+                  <Set_Start_Time/>
+                </Col_1>
+                <Col_2>
+                  <Set_Finish_Time/>
+                </Col_2>
+              </Colgroup_2>
               <Duration_in_Minutes/>
               <Duration_in_Days_Nights/>
               <Number_of_Traps_per_Day_Night/>
@@ -88,6 +102,8 @@
         </faims>
       </instance>
       <bind nodeset="/faims/Control/ID_Numbers/Next_Source_ID" type="decimal"/>
+      <bind nodeset="/faims/Record/Survey/Start_Date" type="date"/>
+      <bind nodeset="/faims/Record/Survey/Finish_Date" type="date"/>
     </model>
   </h:head>
   <h:body>
@@ -213,12 +229,36 @@
         <input faims_attribute_name="Finish Date" faims_attribute_type="measure" ref="Finish_Date">
           <label>{Finish_Date}</label>
         </input>
-        <input faims_attribute_name="Start Time" faims_attribute_type="measure" ref="Start_Time">
-          <label>{Start_Time}</label>
-        </input>
-        <input faims_attribute_name="Finish Time" faims_attribute_type="measure" ref="Finish_Time">
-          <label>{Finish_Time}</label>
-        </input>
+        <group ref="Colgroup_1" faims_style="orientation">
+          <label/>
+          <group ref="Col_1" faims_style="even">
+            <label/>
+            <input faims_attribute_name="Start Time" faims_attribute_type="measure" ref="Start_Time">
+              <label>{Start_Time}</label>
+            </input>
+          </group>
+          <group ref="Col_2" faims_style="even">
+            <label/>
+            <input faims_attribute_name="Finish Time" faims_attribute_type="measure" ref="Finish_Time">
+              <label>{Finish_Time}</label>
+            </input>
+          </group>
+        </group>
+        <group ref="Colgroup_2" faims_style="orientation">
+          <label/>
+          <group ref="Col_1" faims_style="even">
+            <label/>
+            <trigger ref="Set_Start_Time">
+              <label>{Set_Start_Time}</label>
+            </trigger>
+          </group>
+          <group ref="Col_2" faims_style="even">
+            <label/>
+            <trigger ref="Set_Finish_Time">
+              <label>{Set_Finish_Time}</label>
+            </trigger>
+          </group>
+        </group>
         <input faims_attribute_name="Duration in Minutes" faims_attribute_type="measure" ref="Duration_in_Minutes">
           <label>{Duration_in_Minutes}</label>
         </input>
