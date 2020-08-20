@@ -4311,6 +4311,9 @@ addOnEvent("Record/Sighting/Sightings", "click", "loadEntity()");
 
 /************************************ TIME ************************************/
 
+// TODO: Confirm before overwriting dates.
+// TODO: Compute the differences upon more events
+
 import java.text.SimpleDateFormat;
 import java.util.concurrent.TimeUnit;
 
