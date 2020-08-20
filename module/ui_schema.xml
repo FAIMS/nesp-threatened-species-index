@@ -262,16 +262,16 @@
       </group>
       <group ref="Sighting" faims_scrollable="false">
         <label>{Sighting}</label>
-        <select1 appearance="compact" ref="New_Sighting">
+        <trigger ref="New_Sighting">
           <label>{New_Sighting}</label>
+        </trigger>
+        <select1 appearance="compact" ref="Sightings">
+          <label>{Sightings}</label>
           <item>
             <label>Options not loaded</label>
             <value>Options not loaded</value>
           </item>
         </select1>
-        <trigger ref="Sightings">
-          <label>{Sightings}</label>
-        </trigger>
       </group>
     </group>
     <group ref="Sighting" faims_archent_type="Sighting">

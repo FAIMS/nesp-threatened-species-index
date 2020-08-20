@@ -153,8 +153,8 @@
   </Survey>
 
   <Sighting f="noscroll">
-    <New_Sighting ec="Sighting"/>
-    <Sightings lc="Sighting"/>
+    <New_Sighting t="button" lc="Sighting"/>
+    <Sightings t="list" ec="Sighting"/>
   </Sighting>
 </Record>
 

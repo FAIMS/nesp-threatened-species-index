@@ -344,8 +344,8 @@ REF_TO_TYPE.put("Record/Survey/Positional_Accuracy_External_m", "input");
 REF_TO_TYPE.put("Record/Survey/Survey_Comments", "input");
 REF_TO_TYPE.put("Record/Survey/Intensive_Management", "input");
 REF_TO_TYPE.put("Record/Survey/Monitoring_Program", "dropdown");
-REF_TO_TYPE.put("Record/Sighting/New_Sighting", "list");
-REF_TO_TYPE.put("Record/Sighting/Sightings", "button");
+REF_TO_TYPE.put("Record/Sighting/New_Sighting", "button");
+REF_TO_TYPE.put("Record/Sighting/Sightings", "list");
 REF_TO_TYPE.put("Sighting/Sighting/Taxon_ID", "input");
 REF_TO_TYPE.put("Sighting/Sighting/Common_Name", "input");
 REF_TO_TYPE.put("Sighting/Sighting/Scientific_Name", "input");
@@ -3373,12 +3373,12 @@ void onClickControlNewRecord () {
 
 
 
-void onClickRecordSightings () {
+void onClickRecordNewSighting () {
   newSighting("Record");
 }
 addOnEvent("User/User/Select_User", "click", "onClickUserSelectUser()");
 addOnEvent("Control/Main/New_Record", "click", "onClickControlNewRecord()");
-addOnEvent("Record/Sighting/Sightings", "click", "onClickRecordSightings()");
+addOnEvent("Record/Sighting/New_Sighting", "click", "onClickRecordNewSighting()");
 
 /******************************************************************************/
 /*                   AUDIO, CAMERA, FILE AND VIDEO BINDINGS                   */
@@ -4282,7 +4282,7 @@ String getEntityMenuPopulationFunction(String[] menuDescriptor) {
 
 ENTITY_MENUS = new ArrayList();
 ENTITY_MENUS.add(new String[] {
-    "Record/Sighting/New_Sighting",
+    "Record/Sighting/Sightings",
     "getUuid(\"Record\")",
     "Sighting",
     "Record - Sighting"
@@ -4302,7 +4302,7 @@ for (m : ENTITY_MENUS) {
   addOnEvent(ref, evt, cmd);
 }
 
-addOnEvent("Record/Sighting/New_Sighting", "click", "loadEntity()");
+addOnEvent("Record/Sighting/Sightings", "click", "loadEntity()");
 /******************************************************************************/
 /*                             HANDWRITTEN LOGIC                              */
 /******************************************************************************/
