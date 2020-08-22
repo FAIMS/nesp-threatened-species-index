@@ -1,4 +1,5 @@
 <?xml version="1.0" ?>
+<!--TODO: arch16n in logic-->
 <module>
 
 <User f="nodata">
@@ -18,11 +19,10 @@
 </Control>
 
 <Record>
-  <fmt>{{Source_ID}}{{Source_Description}}</fmt>
+  <fmt>{{Source_Description}}{{Source_ID}}</fmt>
 
   <Survey>
-    <Source_ID f="notnull autonum"/>
-    <Source_Type>
+    <Source_Type f="persist">
       <desc>
         Specify whether data is obtained as electronic primary data from a custodian or extracted from a published paper/report.
       </desc>
@@ -31,16 +31,18 @@
         <opt>Custodian</opt>
       </opts>
     </Source_Type>
-    <Source_Description>
+    <Source_Description f="persist">
       <desc>
         This text field describes the data source e.g. BlackThroatedFinchRecoveryTeamMonitoring.
       </desc>
     </Source_Description>
-    <Source_Provider>
+    <Source_Provider f="persist">
       <desc>
         Name of institution or individual e.g. Parks Australia or Doe J.
       </desc>
     </Source_Provider>
+    <Source_ID f="notnull autonum"/>
+    <Source_Primary_Key t="webview" f="nolabel"/>
     <Location_Name>
       <desc>
         Populate the general name of location e.g. Kakadu National Park. This field is not related to SiteName.
@@ -229,8 +231,6 @@
 
 </Sighting>
 
-
-
 <logic><![CDATA[
 <!--@SOURCE: logic/time.bsh-->
 
@@ -238,6 +238,7 @@
 <!--@SOURCE: logic/common-name.bsh-->
 <!--@SOURCE: logic/scientific-name.bsh-->
 <!--@SOURCE: logic/menu-correspondence.bsh-->
+<!--@SOURCE: logic/source-primary-key.bsh-->
 ]]></logic>
 
 </module>

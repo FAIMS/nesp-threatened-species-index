@@ -7,15 +7,15 @@
   </RelationshipElement>
   <ArchaeologicalElement name="Record">
     <description></description>
-    <property name="Source ID" type="measure" isIdentifier="true">
-      <description></description>
-      <formatString>$2</formatString>
-      <appendCharacterString> - </appendCharacterString>
-    </property>
     <property name="Source Description" type="measure" isIdentifier="true">
       <description>
         This text field describes the data source e.g. BlackThroatedFinchRecoveryTeamMonitoring.
       </description>
+      <formatString>$2</formatString>
+      <appendCharacterString> - </appendCharacterString>
+    </property>
+    <property name="Source ID" type="measure" isIdentifier="true">
+      <description></description>
       <formatString>$2</formatString>
       <appendCharacterString> - </appendCharacterString>
     </property>

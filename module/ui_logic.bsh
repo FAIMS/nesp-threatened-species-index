@@ -1,5 +1,5 @@
 /*
- * GENERATED WITH FAIMS-TOOLS, SHA1: 003c07593e4f4841c320819da001a8bdcc410558
+ * GENERATED WITH FAIMS-TOOLS, SHA1: 95f8e7740cb00b5818eb7630c46c79e91fbcb523
  */
 import android.util.Log;
 import android.os.Build.MODEL;
@@ -321,10 +321,11 @@ REF_TO_TYPE.put("Control/Search/Search_Button", "button");
 REF_TO_TYPE.put("Control/Search/Entity_Types", "dropdown");
 REF_TO_TYPE.put("Control/Search/Entity_List", "list");
 REF_TO_TYPE.put("Control/ID_Numbers/Next_Source_ID", "input");
-REF_TO_TYPE.put("Record/Survey/Source_ID", "input");
 REF_TO_TYPE.put("Record/Survey/Source_Type", "dropdown");
 REF_TO_TYPE.put("Record/Survey/Source_Description", "input");
 REF_TO_TYPE.put("Record/Survey/Source_Provider", "input");
+REF_TO_TYPE.put("Record/Survey/Source_ID", "input");
+REF_TO_TYPE.put("Record/Survey/Source_Primary_Key", "webview");
 REF_TO_TYPE.put("Record/Survey/Location_Name", "input");
 REF_TO_TYPE.put("Record/Survey/Search_Type_Description", "dropdown");
 REF_TO_TYPE.put("Record/Survey/Start_Date", "input");
@@ -367,10 +368,10 @@ REF_TO_TYPE.put("Record/Survey", "tab");
 REF_TO_TYPE.put("Record/Sighting", "tab");
 REF_TO_TYPE.put("Sighting/Sighting", "tab");
 
-DATA_REFS.add("Record/Survey/Source_ID");
 DATA_REFS.add("Record/Survey/Source_Type");
 DATA_REFS.add("Record/Survey/Source_Description");
 DATA_REFS.add("Record/Survey/Source_Provider");
+DATA_REFS.add("Record/Survey/Source_ID");
 DATA_REFS.add("Record/Survey/Location_Name");
 DATA_REFS.add("Record/Survey/Search_Type_Description");
 DATA_REFS.add("Record/Survey/Start_Date");
@@ -2332,7 +2333,9 @@ void persistOverSessions(String ref) {
   persistOverSessions(ref, false, (String) null);
 }
 
-
+persistOverSessions("Record/Survey/Source_Type", false);
+persistOverSessions("Record/Survey/Source_Description", false);
+persistOverSessions("Record/Survey/Source_Provider", false);
 
 /******************************************************************************/
 /*                           FIELD COPYING HELPERS                            */
@@ -3384,6 +3387,11 @@ void onClickControlNewRecord () {
 
 
 void onClickRecordNewSighting () {
+  triggerAutoSave();
+  if (getUuid("Record") == null) {
+    showToast("{You_must_save_this_tabgroup_first}");
+    return;
+  }
   newSighting("Record");
 }
 addOnEvent("User/User/Select_User", "click", "onClickUserSelectUser()");
@@ -11897,6 +11905,42 @@ addOnEvent(
     REF_SCIENTIFIC_NAME,
     "click",
     "setByScientificName()");
+/***************************** SOURCE PRIMARY KEY *****************************/
+
+final String REF_SOURCE_PRIMARY_KEY =
+  "Record/Survey/Source_Primary_Key";
+
+void updateSourcePrimaryKey() {
+  String html = "<b>Source Primary Key:</b> ";
+  String uuid = getUuid(getTabGroupRef(REF_SOURCE_PRIMARY_KEY));
+
+  if (isNull(uuid)) {
+    populateWebViewHtml(REF_SOURCE_PRIMARY_KEY, html + "<i>None</i>");
+    return;
+  }
+
+  String q = "";
+  q += "SELECT uuid, response ";
+  q += "FROM latestnondeletedarchentformattedidentifiers ";
+  q += "WHERE uuid = '%s' ";
+  q  = replaceFirst(q, "%s", uuid);
+
+  cb = new FetchCallback() {
+    onFetch(result) {
+      populateWebViewHtml(REF_SOURCE_PRIMARY_KEY, html + result.get(1));
+    }
+  };
+
+  fetchOne(q, cb);
+}
+
+
+for (String event : new String[] {"save", "fetch", "copy", "create"})
+  addOnEvent(
+      getTabGroupRef(REF_SOURCE_PRIMARY_KEY),
+      event,
+      "updateSourcePrimaryKey()"
+  );
 
 
 /******************************************************************************/

@@ -45,10 +45,11 @@
           </Control>
           <Record>
             <Survey>
-              <Source_ID/>
               <Source_Type/>
               <Source_Description/>
               <Source_Provider/>
+              <Source_ID/>
+              <Source_Primary_Key/>
               <Location_Name/>
               <Search_Type_Description/>
               <Start_Date/>
@@ -218,9 +219,6 @@
       <label>{Record}</label>
       <group ref="Survey">
         <label>{Survey}</label>
-        <input faims_attribute_name="Source ID" faims_attribute_type="measure" ref="Source_ID" faims_style_class="required">
-          <label>{Source_ID}</label>
-        </input>
         <select1 faims_attribute_name="Source Type" faims_attribute_type="vocab" ref="Source_Type">
           <label>{Source_Type}</label>
           <item>
@@ -233,6 +231,12 @@
         </input>
         <input faims_attribute_name="Source Provider" faims_attribute_type="measure" ref="Source_Provider">
           <label>{Source_Provider}</label>
+        </input>
+        <input faims_attribute_name="Source ID" faims_attribute_type="measure" ref="Source_ID" faims_style_class="required">
+          <label>{Source_ID}</label>
+        </input>
+        <input faims_web="true" ref="Source_Primary_Key">
+          <label/>
         </input>
         <input faims_attribute_name="Location Name" faims_attribute_type="measure" ref="Location_Name">
           <label>{Location_Name}</label>

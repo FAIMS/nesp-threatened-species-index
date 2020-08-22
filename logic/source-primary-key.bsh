@@ -1,0 +1,36 @@
+/***************************** SOURCE PRIMARY KEY *****************************/
+
+final String REF_SOURCE_PRIMARY_KEY =
+  "Record/Survey/Source_Primary_Key";
+
+void updateSourcePrimaryKey() {
+  String html = "<b>Source Primary Key:</b> ";
+  String uuid = getUuid(getTabGroupRef(REF_SOURCE_PRIMARY_KEY));
+
+  if (isNull(uuid)) {
+    populateWebViewHtml(REF_SOURCE_PRIMARY_KEY, html + "<i>None</i>");
+    return;
+  }
+
+  String q = "";
+  q += "SELECT uuid, response ";
+  q += "FROM latestnondeletedarchentformattedidentifiers ";
+  q += "WHERE uuid = '%s' ";
+  q  = replaceFirst(q, "%s", uuid);
+
+  cb = new FetchCallback() {
+    onFetch(result) {
+      populateWebViewHtml(REF_SOURCE_PRIMARY_KEY, html + result.get(1));
+    }
+  };
+
+  fetchOne(q, cb);
+}
+
+
+for (String event : new String[] {"save", "fetch", "copy", "create"})
+  addOnEvent(
+      getTabGroupRef(REF_SOURCE_PRIMARY_KEY),
+      event,
+      "updateSourcePrimaryKey()"
+  );
