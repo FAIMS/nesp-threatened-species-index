@@ -2,7 +2,7 @@
 This demonstration module was created for the **Threatened Species Index**, based at the University of Queensland, Australia. The module has been designed as a **proof-of-concept prototype** to collect sightings of endangered species across Australia for upload to the **TSX website** (https://tsx.org.au/). It is **not** currently endorsed for data collection to the TSX. It may be of use for other sightings of species.   
 
 ## Authorship:
-This module was co-developed by Dr Micha V Jackson at the Threatened Species Recovery Hub, University of Queensland, and Penny Dr Crook, Dr Petra Hermankova and Christian Nassif-Haynes at the FAIMS Project, Department of Ancient History, Macquarie University.
+This module was co-developed by Dr Micha V Jackson at the Threatened Species Recovery Hub, University of Queensland, and Dr Penny Crook, Dr Petra Hermankova and Christian Nassif-Haynes at the FAIMS Project, Department of Ancient History, Macquarie University.
 
 ## Funding:
 Development of this module was funded by the FAIMS Project.
